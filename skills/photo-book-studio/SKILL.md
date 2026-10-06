@@ -45,9 +45,17 @@ This skill owns intake, selection policy and layout. Optional third-party transf
 
 For an explicitly authorized stock-photo showcase, persist the user's permission to invent demo copy/identities in the brief. Place the fictional-story and photo-rights disclosure beside the showcase rather than inside its artistic pages. This exception does not apply to real-user books. Do not bundle raw stock-photo files in the reusable skill.
 
+## Event backgrounds and writing pages
+
+When an event deserves emphasis, consider deriving a torn-photo background from its own photographs, then placing truthful photos and text in the calm regions. This is a structural background option, not only a framed zine poster. Keep the source ID on its normal placement unless replacement is explicitly authorized; generated decorative backgrounds must not inflate completeness. Use source color/gesture, preserve whitespace and readable contrast, and avoid duplicating a dominant neighboring artwork merely to fill the spread.
+
+For a longer opening, ending or personal letter, recommend a dedicated writing page (or a pair) at the beginning/end rather than squeezing it into captions or shrinking type. Offer an available image tool to draw a story-related background: meaningful places, personal symbols, travel route or a farewell motif, with a deliberate reading-free illustration area. Lay out approved paragraphs after generation, measure their actual extent, and add another writing page if needed. Keep plain writing paper as an equally valid choice. Read references/finishing.md for letter and print review.
+
+Image-generated covers need not be watercolor, paper collage or handwriting. Choose photographic, graphic/minimal, illustrated or mixed-media cover language from the actual brief; a multi-book showcase should demonstrate materially different design directions rather than color variants.
+
 ## Typography
 
-Use no more than three font roles: a literary handwritten or Kai face for poems, a serif for dates and location labels, and one playful display face for short notes. Variation should come from placement, scale, direction, line breaks, color, and slight rotation. Keep paragraphs rare and preserve a clean overall silhouette.
+Use no more than three font roles: a literary handwritten or Kai face for poems, a serif for dates and location labels, and one playful display face for short notes. Variation should come from placement, scale, direction, line breaks, color, and slight rotation. Keep paragraphs rare outside dedicated writing pages and preserve a clean overall silhouette.
 
 Place typography in calm image regions or page whitespace. Avoid the gutter and trim safety zone. A caption may overlap a photo when contrast is deliberate and the subject remains unobstructed.
 

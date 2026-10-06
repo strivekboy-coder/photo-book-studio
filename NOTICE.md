@@ -7,3 +7,5 @@ Python/Node/browser tools are installed separately and retain their own licenses
 Photos, audio, generated images and user stories supplied to individual projects are not automatically covered by this repository's MIT license or granted permission for publication. The test demo is generated geometric artwork, not a user's photos.
 
 Showcase image exception: docs/showcase/** and docs/showcase-hero.png contain licensed stock-photography-based finished albums and generated art. They are shown for this project's demonstration only and are not licensed under the code MIT license. Story identities, dates and captions are fictional showcase settings. Detailed original-image license evidence is to be supplied by the maintaining user. Raw source stock images are not distributed.
+
+Real-author excerpt exception: docs/showcase/real-life/ contains only the six author-approved spreads (original viewer 7, 14, 15, 55, 58, 68). These are real memories, separately authorized for project display; page 68 personal postcard details are removed only in the public copy. No other pages, source photos or private project data are distributed.

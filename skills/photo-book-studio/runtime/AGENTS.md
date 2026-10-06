@@ -13,3 +13,5 @@ Use placeholder covers during samples. By default generate the final cover with 
 Build to prove identity and occurrence counts and referenced assets. Render and inspect every changed spread in a real browser before reporting success. Check crops, hierarchy, text, contrast, decorations, gutter safety and neighboring rhythm. No successful build proves aesthetic or print quality.
 
 For print, distinguish viewer spreads from single faces, confirm printer dimensions/bleed/page increment, review exported PDF pixels and report source-resolution limits. Cover wrap and hinges require the printer's template. Local changes do not automatically regenerate the full PDF.
+
+For a meaningful event, consider a source-photo torn background with calm areas for photos/text. For long opening/ending copy, propose dedicated writing pages and optional story-related image-generated writing paper before reducing type. Choose cover medium from the brief; image generation does not imply watercolor or paper collage.

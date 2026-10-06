@@ -2,7 +2,7 @@
 
 ### 照片进来，故事成册。
 
-把照片和几句描述交给 Codex，做成一本有自己的文字、排版、贴纸和专属封面的相册。
+根据你的照片量身设计模板与布局，配上可爱贴纸、炫酷背景和不同风格的文字。你可以继续提意见修改；内页完成后，再根据整本相册的内容用image制作专属封面。
 
 [![四本示例相册的专属封面](docs/showcase-hero.png)](https://strivekboy-coder.github.io/photo-book-studio/)
 
@@ -19,13 +19,15 @@
 
 ![情侣相册内页：回家的路与金色拥抱](docs/showcase/couple/spread-04.jpg)
 
-## 好看的，不只是封面
+## 根据你的照片，量身做一本
 
-- **你的照片，都好好放进书里。** 不因相似或难排版而偷偷删掉回忆。
-- **排版跟着故事走。** 大图、留白、拼贴、侧排与竖排，让重要的照片有自己的位置。
-- **文字有自己的口吻。** 可爱的小批注、日记里的旁白、写给恋人的一句话。
-- **封面从整本故事里长出来。** 默认先完成内页，再用可用的 image 工具画最终封面。
-- **做完能翻，也能印。** 浏览器相册、手机单页阅读、网页打包与带出血的 PDF。
+- **模板与布局量身设计。** 根据照片的方向、色彩、人物与故事，选择、改造或新建合适的版式。
+- **可爱贴纸，来自照片里的小事。** 小猫、食物、交通工具和旅行元素，和回忆放在一起。
+- **炫酷背景，也有留白。** 事件照片可以变成撕纸背景，风景和插画接着画下去。
+- **风格由你选。** 温暖、可爱、浪漫、极简、复古或zine感，中英文都能安排。
+- **继续按你的意见修改。** 放大某张照片、换文案、移动贴纸、调整裁切和页面节奏。
+- **相册完成，再画封面。** 根据整本的内容、色彩与情绪，用可用的image工具制作最终封面。
+- **选中的照片，都放进书里。** 保留原图，完成后能网页翻阅，也能导出印刷PDF。
 
 ## 照片之外，再留一点感觉
 
@@ -36,9 +38,25 @@
 
 四种创意路线都已经用在示例里。它们按照片和故事选择，额外风格 skill 是可选增强。
 
-![慕尼黑相册：真实冲浪照片与撕纸插画](docs/showcase/munich/spread-04.jpg)
+![慕尼黑相册：真实冲浪照片与撕纸插画](docs/showcase/munich/spread-05.jpg)
 
 ![成都英文旅行日记：熊猫原照与撕纸](docs/showcase/chengdu/spread-04.jpg)
+
+## 真实相册，也能这样做
+
+从作者制作的相册中，只选六个背影与风景片段展示：原第7、14、15、55、58、68跨页。
+
+[![真实相册：阿尔卑斯徒步与撕纸插画](docs/showcase/real-life/spread-15.jpg)](https://strivekboy-coder.github.io/photo-book-studio/showcase/real-life/)
+
+[![真实相册：威尼斯的街头片段](docs/showcase/real-life/spread-55.jpg)](https://strivekboy-coder.github.io/photo-book-studio/showcase/real-life/?page=4)
+
+**[翻看六个真实片段 ↗](https://strivekboy-coder.github.io/photo-book-studio/showcase/real-life/)**
+
+## 事件页与写信页
+
+[![照片衍生的撕纸事件背景](docs/showcase/munich/spread-04.jpg)](https://strivekboy-coder.github.io/photo-book-studio/showcase/munich/?page=3)
+
+[![留有长文空间的故事背景写信页](docs/showcase/chengdu/spread-08.jpg)](https://strivekboy-coder.github.io/photo-book-studio/showcase/chengdu/?page=7)
 
 ## 开始做你的一本
 
@@ -94,6 +112,15 @@ python /your/book/scripts/export_pdf.py --workspace /your/book
 详见 [使用与印刷说明](docs/USAGE.md)。
 
 
+## 准备照片的小Tips
+
+- **iPhone传到Windows或Linux：** 两边安装[LocalSend](https://localsend.org/download)，连接同一局域网（通常同一Wi-Fi）即可传文件。互相找不到时，检查本地网络权限与防火墙。请使用官方网站下载。
+- **尽量传照片文件。** 避免先截图或通过聊天软件压缩；保留一份独立原图。HEIC/HEIF需要时转换为JPEG/PNG，原文件仍留着。
+- **先做小样。** 用30–50张有代表性的照片试风格，满意后再追加。特别重要、不能裁切的照片提前标记。
+- **修改说清楚位置。** 用当前网页页码＋左／右＋具体要求，一次列出相关修改。
+- **想写长一点的话：** 首页或尾页增加专门写字页，适合情书、开篇、结语和旅行感想；skill会建议用image制作相关背景，并给文字留出空间。
+- **计划印刷：** 先向印厂确认成品尺寸、出血和封面／书脊模板，再导最终PDF。
+
 ## 制作过程
 
 第一次用简短问卷确定故事与偏好 → 看照片、做小样 → 分批补完整本 → 渲染检查 → 画最终封面 → 导出。
@@ -104,6 +131,6 @@ python /your/book/scripts/export_pdf.py --workspace /your/book
 
 ## 示例与许可
 
-示例为效果展示，非真实用户故事；人物／动物关系、日期和文案为策展设定。摄影素材来自 Unsplash（含授权素材）及用户提供的授权图库，AI封面、插画和贴纸由image生成。图片与相册成品不属于代码的MIT许可范围，未经许可请勿转载。详细许可信息由维护者补充，见[素材说明](examples/README.md)。
+四本主题示例为效果展示，非真实用户故事；人物／动物关系、日期和文案为策展设定。摄影素材来自 Unsplash（含授权素材）及用户提供的授权图库，AI封面、插画和贴纸由image生成。图片与相册成品不属于代码的MIT许可范围，未经许可请勿转载。另有作者真实相册的六个匿名选页。详细许可信息由维护者补充，见[素材说明](examples/README.md)。
 
 项目自有代码与流程采用 [MIT](LICENSE)，字体保留 [SIL OFL](NOTICE.md)。基础功能无需额外创意 skill；印刷封面仍需按印厂包边／沟槽模板确认。

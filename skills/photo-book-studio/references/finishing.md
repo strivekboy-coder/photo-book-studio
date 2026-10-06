@@ -25,3 +25,5 @@ Use printer specifications for final cover/spine dimensions and binding-dependen
 Before delivery, verify image loading, embedded fonts, physical type size, bleed, trim/gutter safety, cover/spine template and page count. An attractive preview, successful HTML build or complete photo placement does not mean print preflight passed. Preserve the approved design and report remaining limits.
 
 Default final-cover generation occurs after the interior and whole-book review. Samples use a placeholder. Use actual story, palette and user-approved reference assets; make clear whether image generation is available. Do not inherit the original author's permissions or cover art.
+
+For long text, propose opening/ending writing pages before reducing type. Offer story-specific image-generated writing paper, such as a departure route connecting meaningful places, only with a defined calm reading field. Measure paragraphs against the actual generated background and preserve the user's words. Event emphasis can also use a photo-derived torn background behind regular photos/text, instead of a standalone framed poster.
