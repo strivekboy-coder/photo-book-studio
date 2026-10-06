@@ -42,9 +42,24 @@
 
 ![成都英文旅行日记：熊猫原照与撕纸](docs/showcase/chengdu/spread-04.jpg)
 
+## 推荐一起安装的创意 Skills
+
+想做出展示里的特别页面，可以选装这些创意 Skills。制作时会根据照片内容挑选合适的路线：
+
+| Skill | 适合做什么 |
+|---|---|
+| [Minimal Zine Poster](https://github.com/LiamGvchi/gc-minimal-zine-poster) | 留白、大字与小拼贴，适合封面和安静的故事页。 |
+| [Photo Abstract Editorial](https://github.com/ZzzLc0405/photo-abstract-editorial) | 保留真实照片，搭配从照片提炼的抽象记忆面板。 |
+| [Gathered Scenes](https://github.com/Zeejay0/gathered-scenes-zine-skill) | 用撕纸边缘连接照片与插画，也能做事件背景。 |
+| [Photo to Zine Postcard](https://github.com/Whiplashzeb/photo-to-zine-postcard) | 把照片做成旅行明信片、纪念卡或小插页。 |
+
+也可以安装统一入口 [Zine](https://github.com/jas0nh/zine-poster-skill)，集中使用其中的多种纸刊风格；展示制作中也使用了这个入口。把仓库链接交给 Codex，请它安装对应 Skill，再开启新会话即可。生成封面、贴纸和插画还需要可用的 image 工具。
+
+这些是推荐增强，基础照片排版可以直接开始；第三方 Skills 的使用与许可以各自仓库为准。
+
 ## 真实相册，也能这样做
 
-从作者制作的相册中，只选六个背影与风景片段展示：原第7、14、15、55、58、68跨页。
+从作者制作的相册中，选出六个背影与风景片段展示。
 
 [![真实相册：阿尔卑斯徒步与撕纸插画](docs/showcase/real-life/spread-15.jpg)](https://strivekboy-coder.github.io/photo-book-studio/showcase/real-life/)
 
