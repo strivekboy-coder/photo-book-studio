@@ -40,4 +40,11 @@ class WorkflowTests(unittest.TestCase):
   inputs=root/'test-input';inputs.mkdir();im=Image.new('RGB',(640,480),'#779991');exif=im.getexif();exif[274]=6;source=inputs/'照片.jpg';im.save(source,exif=exif);before=hashlib.sha256(source.read_bytes()).hexdigest()
   subprocess.run([sys.executable,str(REPO/'skills/photo-book-studio/scripts/studio.py'),'inventory','--workspace',str(root),'--photos',str(inputs)],check=True)
   record=json.loads((root/'project/inventory.json').read_text(encoding='utf-8'))['photos'][0];self.assertEqual((record['width'],record['height']),(480,640));self.assertEqual(hashlib.sha256(source.read_bytes()).hexdigest(),before)
+ def test_avif_input_is_inventoried(self):
+  from PIL import Image
+  root=Path(self.temp.name)/'avif-book';subprocess.run([sys.executable,str(REPO/'skills/photo-book-studio/scripts/studio.py'),'init',str(root)],check=True)
+  brief=json.loads((root/'project/brief.json').read_text(encoding='utf-8'));brief['intakeComplete']=True;(root/'project/brief.json').write_text(json.dumps(brief),encoding='utf-8')
+  inputs=root/'test-input';inputs.mkdir();Image.new('RGB',(480,640),'#779991').save(inputs/'photo.avif',format='AVIF')
+  subprocess.run([sys.executable,str(REPO/'skills/photo-book-studio/scripts/studio.py'),'inventory','--workspace',str(root),'--photos',str(inputs)],check=True)
+  record=json.loads((root/'project/inventory.json').read_text(encoding='utf-8'))['photos'][0];self.assertEqual(record['file'],'photo.avif');self.assertEqual((record['width'],record['height']),(480,640))
 if __name__=='__main__':unittest.main()

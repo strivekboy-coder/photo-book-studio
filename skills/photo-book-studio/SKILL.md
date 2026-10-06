@@ -13,7 +13,7 @@ For a new book, read and ask the fixed [first-use questionnaire](references/inta
 
 This directory is self-contained: `scripts/studio.py`, `runtime/src`, `runtime/scripts` and OFL fonts ship together. Resolve paths relative to this installed skill. Run `python <skill>/scripts/studio.py init <new-workspace>` to create a clean workspace without ingesting photos. Complete and save the questionnaire, then run `inventory --workspace <workspace> --photos <selected-folder>` for new files. It produces an EXIF/source inventory and one contact sheet; it does not compose the book for you.
 
-After you write `project/book.json`, run `node <workspace>/scripts/build.mjs`. `studio.py web --workspace <workspace>` packages a static website. For print, install the workspace's `requirements-print.txt` and use `python <workspace>/scripts/export_pdf.py --workspace <workspace>`; an optional `--browser` selects installed Edge/Chrome. The bundled browser renderer must inspect every changed spread. Missing images and identity/count mismatches are blocking, but successful scripts never replace visual review. Basic tools require Python 3.10+, Node 20.11+ and Pillow; print additionally requires Playwright, pypdf, reportlab and a supported Chromium browser. No other creative skill is required.
+After you write `project/book.json`, run `node <workspace>/scripts/build.mjs`. `studio.py web --workspace <workspace>` packages a static website. For print, install the workspace's `requirements-print.txt` and use `python <workspace>/scripts/export_pdf.py --workspace <workspace>`; an optional `--browser` selects installed Edge/Chrome. The bundled browser renderer must inspect every changed spread. Missing images and identity/count mismatches are blocking, but successful scripts never replace visual review. Basic tools require Python 3.10+, Node 20.11+ and Pillow 11.3+; print additionally requires Playwright, pypdf, reportlab and a supported Chromium browser. No other creative skill is required.
 
 ## Workflow
 
@@ -42,6 +42,8 @@ The saved brief is the durable preference record. Update it immediately when the
 Use a quiet placeholder cover during intake and sample review. By default, finish the interior narrative and its first full review before using an available image-generation tool to create the final cover from the actual story, palette and approved reference photos. Plan physical resolution at intake even though generation happens at the end. Offer matching back/spine treatment when print is requested. Respect a user-selected photo cover, a text-only cover, or an explicit request to generate early. Never imply image generation is available when it is not; use an honest photo/text fallback and record the missing capability.
 
 This skill owns intake, selection policy and layout. Optional third-party transformation skills provide only the requested asset treatment; they must not replace this workflow or screen out photos. No extra creative skill is required for a basic book. Read the bundled [zine policy](references/zine-policy.md) only for new batches or substantial redesigns, and use the brief's permissions rather than another project's authorizations.
+
+For an explicitly authorized stock-photo showcase, persist the user's permission to invent demo copy/identities in the brief. Place the fictional-story and photo-rights disclosure beside the showcase rather than inside its artistic pages. This exception does not apply to real-user books. Do not bundle raw stock-photo files in the reusable skill.
 
 ## Typography
 

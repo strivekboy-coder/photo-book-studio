@@ -1,0 +1,21 @@
+{
+  "photos": {
+    "cat": 6,
+    "couple": 10,
+    "munich": 17,
+    "chengdu": 17
+  },
+  "selected": 50,
+  "placed": 50,
+  "omitted": 0,
+  "allSpreadsRendered": true,
+  "coversGeneratedAfterInterior": true,
+  "creativeRoutes": [
+    "Minimal Zine Poster",
+    "Photo Abstract Editorial",
+    "Gathered Scenes",
+    "Photo to Zine Postcard"
+  ],
+  "chengduLanguage": "English",
+  "rawStockFilesPublished": false
+}

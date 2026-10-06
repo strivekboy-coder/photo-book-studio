@@ -4,16 +4,16 @@
 
 把照片和几句描述交给 Codex，做成一本有自己的文字、排版、贴纸和专属封面的相册。
 
-[![三本示例相册的专属封面](docs/showcase-hero.png)](https://strivekboy-coder.github.io/photo-book-studio/)
+[![四本示例相册的专属封面](docs/showcase-hero.png)](https://strivekboy-coder.github.io/photo-book-studio/)
 
 **[打开作品展示 ↗](https://strivekboy-coder.github.io/photo-book-studio/)** · **[下载 Skill](https://github.com/strivekboy-coder/photo-book-studio/releases)**
 
-## 先翻三本小书
+## 先翻四本小书
 
-| 猫咪日常 | 情侣日记 | 旅行纸刊 |
-|---|---|---|
-| [今天也很会偷懒](https://strivekboy-coder.github.io/photo-book-studio/showcase/cat/) | [和你，慢慢来](https://strivekboy-coder.github.io/photo-book-studio/showcase/couple/) | [慢一点，慕尼黑](https://strivekboy-coder.github.io/photo-book-studio/showcase/munich/) |
-| 6张照片，把家变软。 | 10张照片，把日常写成情书。 | 17张照片，把风景装进口袋。 |
+| 猫咪日常 | 情侣日记 | 慕尼黑纸刊 | 成都英文日记 |
+|---|---|---|---|
+| [今天也很会偷懒](https://strivekboy-coder.github.io/photo-book-studio/showcase/cat/) | [和你，慢慢来](https://strivekboy-coder.github.io/photo-book-studio/showcase/couple/) | [慢一点，慕尼黑](https://strivekboy-coder.github.io/photo-book-studio/showcase/munich/) | [Slow Days in Chengdu](https://strivekboy-coder.github.io/photo-book-studio/showcase/chengdu/) |
+| 6张照片，把家变软。 | 10张照片，把日常写成情书。 | 17张照片，把风景装进口袋。 | 17张照片，英文记录慢旅行。 |
 
 ![猫咪相册内页：哈欠、巡逻与手绘贴纸](docs/showcase/cat/spread-03.jpg)
 
@@ -37,6 +37,8 @@
 四种创意路线都已经用在示例里。它们按照片和故事选择，额外风格 skill 是可选增强。
 
 ![慕尼黑相册：真实冲浪照片与撕纸插画](docs/showcase/munich/spread-04.jpg)
+
+![成都英文旅行日记：熊猫原照与撕纸](docs/showcase/chengdu/spread-04.jpg)
 
 ## 开始做你的一本
 

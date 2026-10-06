@@ -1,4 +1,4 @@
-Pillow>=10.0
+Pillow>=11.3
 playwright>=1.49
 pypdf>=5.0
 reportlab>=4.0

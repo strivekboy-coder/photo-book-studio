@@ -2,7 +2,7 @@
 
 The installed skill carries its own runtime. Resolve `scripts/studio.py` relative to the skill directory, not the user's current project. `init` copies the runtime into a new workspace and never overwrites an existing book. Complete the saved brief before calling inventory.
 
-`project/inventory.json` stores the selected source IDs, dimensions after EXIF orientation, capture time and SHA256. Re-importing the same files is idempotent; a filename collision with different bytes fails without replacing an original. HEIC/HEIF needs conversion for the browser first; Pillow may also need an appropriate decoder. JPG/JPEG/PNG/WEBP/GIF are the basic supported inputs. Nested uploads may use `--recursive`, but duplicate basenames require explicit source-ID handling.
+`project/inventory.json` stores the selected source IDs, dimensions after EXIF orientation, capture time and SHA256. Re-importing the same files is idempotent; a filename collision with different bytes fails without replacing an original. HEIC/HEIF needs conversion for the browser first; Pillow may also need an appropriate decoder. JPG/JPEG/PNG/WEBP/GIF/AVIF are the supported inputs; AVIF requires Pillow 11.3+ (standard supported wheels). Nested uploads may use `--recursive`, but duplicate basenames require explicit source-ID handling.
 
 `project/book.json` carries content and layout; read the skill's schema reference. Explicit exclusions or repetitions may use `policy.authorizedOccurrences` (file ID → integer occurrence count), but the agent must record the user's authorization and must not populate this map on its own to make a failing audit pass.
 
