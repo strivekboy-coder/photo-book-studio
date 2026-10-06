@@ -1,0 +1,15 @@
+{
+  "title": "慢一点，慕尼黑",
+  "description": "17张旅行照片，装下街头、河流和下一次出发。",
+  "selectedPhotos": 17,
+  "viewerSpreads": 7,
+  "pages": [
+    "spread-02.jpg",
+    "spread-03.jpg",
+    "spread-04.jpg",
+    "spread-05.jpg",
+    "spread-06.jpg",
+    "spread-07.jpg"
+  ],
+  "cover": "cover.jpg"
+}

@@ -1,25 +1,44 @@
 # Photo Book Studio
 
-**把选好的照片，做成一本有故事的相册。**
+### 照片进来，故事成册。
 
-用于 Codex 的照片书制作 skill：先了解你的需求，再读照片、组织故事、排版和审核。支持浏览器翻阅、手机单页阅读、静态网页打包，以及带出血的印刷 PDF。
+把照片和几句描述交给 Codex，做成一本有自己的文字、排版、贴纸和专属封面的相册。
 
-![Photo Book Studio](docs/banner.svg)
+[![三本示例相册的专属封面](docs/showcase-hero.png)](https://strivekboy-coder.github.io/photo-book-studio/)
 
-> 当前是经过单一真实项目打磨的初始开源版本。狗狗、成长记录和情侣三组真实公开案例尚待验证；仓库内的几何素材只用于功能自检，不代表摄影案例或最终审美效果。
+**[打开作品展示 ↗](https://strivekboy-coder.github.io/photo-book-studio/)** · **[下载 Skill](https://github.com/strivekboy-coder/photo-book-studio/releases)**
 
-## 它做什么
+## 先翻三本小书
 
-- 保留你选中的每张照片；不因相似、画质弱或难排版而偷偷淘汰。
-- 首次问卷只做一次，答案保存在 `project/brief.json`，后续修改不重复问。
-- 按事件组织故事：重要照片舒展，日常碎片适度集中。
-- 可爱、温暖、克制、手账或 zine 等方向；用真实照片决定排版，不机械轮换模板。
-- 文案来自你的描述，或基于可见内容的少量草稿，不编造私人经历。
-- **默认完成内页后，再用可用的 image 工具制作最终封面**，让封面反映整本故事。小样阶段先用占位封面；你选择照片或纯文字封面时遵循你的选择。
-- 裁切、调色、贴纸、撕纸与艺术衍生图分开征求偏好，不捆绑授权。
-- 校验照片身份与次数、素材存在性、页数、尺寸、旋转和出血；最后仍需看实际渲染。
+| 猫咪日常 | 情侣日记 | 旅行纸刊 |
+|---|---|---|
+| [今天也很会偷懒](https://strivekboy-coder.github.io/photo-book-studio/showcase/cat/) | [和你，慢慢来](https://strivekboy-coder.github.io/photo-book-studio/showcase/couple/) | [慢一点，慕尼黑](https://strivekboy-coder.github.io/photo-book-studio/showcase/munich/) |
+| 6张照片，把家变软。 | 10张照片，把日常写成情书。 | 17张照片，把风景装进口袋。 |
 
-## 快速开始
+![猫咪相册内页：哈欠、巡逻与手绘贴纸](docs/showcase/cat/spread-03.jpg)
+
+![情侣相册内页：回家的路与金色拥抱](docs/showcase/couple/spread-04.jpg)
+
+## 好看的，不只是封面
+
+- **你的照片，都好好放进书里。** 不因相似或难排版而偷偷删掉回忆。
+- **排版跟着故事走。** 大图、留白、拼贴、侧排与竖排，让重要的照片有自己的位置。
+- **文字有自己的口吻。** 可爱的小批注、日记里的旁白、写给恋人的一句话。
+- **封面从整本故事里长出来。** 默认先完成内页，再用可用的 image 工具画最终封面。
+- **做完能翻，也能印。** 浏览器相册、手机单页阅读、网页打包与带出血的 PDF。
+
+## 照片之外，再留一点感觉
+
+| 给一个哈欠留白 | 把牵手变成记忆 | 让风景走出照片 | 寄给下一次出发 |
+|---|---|---|---|
+| ![极简纸刊](docs/showcase/effects/minimal.jpg) | ![抽象记忆](docs/showcase/effects/editorial.jpg) | ![撕纸插画](docs/showcase/effects/gathered.jpg) | ![旅行明信片](docs/showcase/effects/postcard.jpg) |
+| Minimal Zine Poster | Photo Abstract Editorial | Gathered Scenes | Photo to Zine Postcard |
+
+四种创意路线都已经用在示例里。它们按照片和故事选择，额外风格 skill 是可选增强。
+
+![慕尼黑相册：真实冲浪照片与撕纸插画](docs/showcase/munich/spread-04.jpg)
+
+## 开始做你的一本
 
 需要 **Python 3.10+、Node.js 20.11+**。基础预览只需要 Pillow，不要求额外创意 skill。
 
@@ -72,23 +91,17 @@ python /your/book/scripts/export_pdf.py --workspace /your/book
 
 详见 [使用与印刷说明](docs/USAGE.md)。
 
-## 可选增强
 
-无需安装其他创意 skill 也能完成基础相册。有图像生成能力时才制作贴纸、撕纸或定制插画；额外的 zine 风格 skill 是可选资产工具，不接管本项目的问卷、保留照片和验收规则。缺少能力时保留照片/文字布局并说明限制，不阻塞基本交付。
+## 制作过程
 
-## 示例与测试
+第一次用简短问卷确定故事与偏好 → 看照片、做小样 → 分批补完整本 → 渲染检查 → 画最终封面 → 导出。
 
-下面是几何素材的桌面/手机功能自检，不是真实照片案例：
+问卷只做一次；后续改文案、挪贴纸、调裁切只处理相关页。原照片保持只读，照片身份与次数由构建检查。
 
-![方形、横版和竖版的功能自检](docs/functional-preview.jpg)
+[详细使用与印刷说明](docs/USAGE.md) · [测试记录](docs/QA.md)
 
+## 示例与许可
 
-- [示例准备指南](examples/README.md)：照片、使用许可、文字和反馈如何提供。
-- `python -m unittest discover -s tests -v`：验证全新安装、输入保护、重复/遗漏、素材检查和尺寸配置。
-- `python tests/make_demo.py --workspace /your/demo`：生成非摄影性质的几何测试书。
+示例为效果展示，非真实用户故事；人物／动物关系、日期和文案为策展设定。摄影素材来自 Unsplash（含授权素材）及用户提供的授权图库，AI封面、插画和贴纸由image生成。图片与相册成品不属于代码的MIT许可范围，未经许可请勿转载。详细许可信息由维护者补充，见[素材说明](examples/README.md)。
 
-真实照片示例不会复用作者私人相册。公开可见不等于可随仓库分发；示例须记录授权和来源。
-
-## 许可与致谢
-
-项目自有代码与流程采用 [MIT License](LICENSE)。字体分别保留 SIL OFL 许可；第三方软件和用户照片遵循各自许可，见 [NOTICE](NOTICE.md)。未打包其他作者的创意 skill，也不要求为使用本项目点赞、star 或关注。
+项目自有代码与流程采用 [MIT](LICENSE)，字体保留 [SIL OFL](NOTICE.md)。基础功能无需额外创意 skill；印刷封面仍需按印厂包边／沟槽模板确认。

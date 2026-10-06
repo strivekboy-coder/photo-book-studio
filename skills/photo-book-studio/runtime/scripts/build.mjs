@@ -9,7 +9,7 @@ const existsSafe=rel=>{if(typeof rel!=='string'||!rel)return false;const resolve
 const inventoryPath=path.join(root,'project/inventory.json');
 const inventory=fs.existsSync(inventoryPath)?JSON.parse(read('project/inventory.json')):null;
 const photoRoot=book.photoRoot||'assets/photos/';
-const supported=/\.(jpe?g|png|webp|gif|heic|heif)$/i;
+const supported=/\.(jpe?g|png|webp|gif|avif|heic|heif)$/i;
 const selected=inventory?inventory.photos.map(p=>p.file):fs.readdirSync(path.resolve(root,photoRoot)).filter(p=>supported.test(p));
 if(new Set(selected).size!==selected.length)errors.push('Duplicate source IDs in inventory');
 for(const spread of book.spreads||[]){

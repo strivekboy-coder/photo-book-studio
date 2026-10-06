@@ -1,7 +1,9 @@
-# Real example sets (pending)
+# 示例相册与素材说明
 
-Planned examples: a dog's everyday life, a child's growth, and a couple's memories. These are test scenarios, not verified success claims yet.
+三个已完成的效果展示案例：猫咪日常（6张照片）、情侣日记（10张照片）、慕尼黑旅行纸刊（17张照片）。成都旅游日记正在追加。
 
-For each set provide 20–40 representative photos, basic event descriptions, the intended recipient/output, and clear permission to redistribute the photos and derivative previews. If full redistribution is not permitted, keep originals outside the repository and publish only approved previews. Record source URL, author, license or permission, and what can be published in a manifest. Public visibility alone is not sufficient.
+它们使用同一个skill制作：保存偏好、读图、事件排版、文字、手绘贴纸、四种创意路线、内页审核后生成封面。每张选图均进入正文一次；艺术衍生图作为额外装饰。文字与关系是用户授权的虚构策展设定，非真实用户故事。
 
-Evaluate whether all photos are placed, important subjects remain large, captions stay truthful, the style suits this particular story, every changed spread is visually reviewed, and a final cover generated after the interior reflects the story. The geometric demo produced by tests/make_demo.py is for mechanics only.
+素材来源：Unsplash（含授权Unsplash+）与用户提供的iStock授权图库图片。提供者已声明拥有所需授权，详细许可信息由项目维护者补充。各组 sources.json 记录原文件名与来源。仓库发布排版完成的成品页，不分发独立原始图库文件。
+
+本目录及 docs/showcase 下的图片和相册成品仅用于本项目效果展示，不属于MIT代码许可范围；未经许可请勿转载或提取用于其他项目。代码和流程仍按项目MIT许可开放。

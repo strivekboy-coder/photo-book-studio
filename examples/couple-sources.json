@@ -1,0 +1,76 @@
+{
+  "example": "couple",
+  "fictionalStory": true,
+  "photos": [
+    {
+      "file": "istockphoto-2217233469-612x612.webp",
+      "source": "iStock / user-licensed",
+      "sourceAssetUrl": null,
+      "authorization": "User states permission; detailed license information to be supplied by maintainer.",
+      "rawSourcePublished": false
+    },
+    {
+      "file": "photo-1426543881949-cbd9a76740a4.avif",
+      "source": "Unsplash",
+      "sourceAssetUrl": "https://images.unsplash.com/photo-1426543881949-cbd9a76740a4",
+      "authorization": "User states permission; detailed license information to be supplied by maintainer.",
+      "rawSourcePublished": false
+    },
+    {
+      "file": "photo-1506014299253-3725319c0f69.avif",
+      "source": "Unsplash",
+      "sourceAssetUrl": "https://images.unsplash.com/photo-1506014299253-3725319c0f69",
+      "authorization": "User states permission; detailed license information to be supplied by maintainer.",
+      "rawSourcePublished": false
+    },
+    {
+      "file": "photo-1534040385115-33dcb3acba5b.avif",
+      "source": "Unsplash",
+      "sourceAssetUrl": "https://images.unsplash.com/photo-1534040385115-33dcb3acba5b",
+      "authorization": "User states permission; detailed license information to be supplied by maintainer.",
+      "rawSourcePublished": false
+    },
+    {
+      "file": "photo-1616330945669-3848624bfc9b.avif",
+      "source": "Unsplash",
+      "sourceAssetUrl": "https://images.unsplash.com/photo-1616330945669-3848624bfc9b",
+      "authorization": "User states permission; detailed license information to be supplied by maintainer.",
+      "rawSourcePublished": false
+    },
+    {
+      "file": "photo-1674660203565-10380f676228.avif",
+      "source": "Unsplash",
+      "sourceAssetUrl": "https://images.unsplash.com/photo-1674660203565-10380f676228",
+      "authorization": "User states permission; detailed license information to be supplied by maintainer.",
+      "rawSourcePublished": false
+    },
+    {
+      "file": "photo-1783816297042-72cbd3269c63.avif",
+      "source": "Unsplash",
+      "sourceAssetUrl": "https://images.unsplash.com/photo-1783816297042-72cbd3269c63",
+      "authorization": "User states permission; detailed license information to be supplied by maintainer.",
+      "rawSourcePublished": false
+    },
+    {
+      "file": "photo-1783816297535-183d87ff5ccb.avif",
+      "source": "Unsplash",
+      "sourceAssetUrl": "https://images.unsplash.com/photo-1783816297535-183d87ff5ccb",
+      "authorization": "User states permission; detailed license information to be supplied by maintainer.",
+      "rawSourcePublished": false
+    },
+    {
+      "file": "premium_photo-1661688877029-7ddbb0990a1a.avif",
+      "source": "Unsplash+ / user-licensed",
+      "sourceAssetUrl": "https://images.unsplash.com/premium_photo-1661688877029-7ddbb0990a1a",
+      "authorization": "User states permission; detailed license information to be supplied by maintainer.",
+      "rawSourcePublished": false
+    },
+    {
+      "file": "premium_photo-1664529914557-ee01920185e2.avif",
+      "source": "Unsplash+ / user-licensed",
+      "sourceAssetUrl": "https://images.unsplash.com/premium_photo-1664529914557-ee01920185e2",
+      "authorization": "User states permission; detailed license information to be supplied by maintainer.",
+      "rawSourcePublished": false
+    }
+  ]
+}

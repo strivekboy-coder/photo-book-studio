@@ -1,0 +1,12 @@
+{
+  "title": "今天也很会偷懒",
+  "description": "6张猫咪照片，做成一本软乎乎的小日子。",
+  "selectedPhotos": 6,
+  "viewerSpreads": 4,
+  "pages": [
+    "spread-02.jpg",
+    "spread-03.jpg",
+    "spread-04.jpg"
+  ],
+  "cover": "cover.jpg"
+}

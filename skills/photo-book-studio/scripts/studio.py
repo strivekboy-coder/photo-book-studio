@@ -4,7 +4,7 @@ import argparse,hashlib,json,shutil,subprocess,sys
 from datetime import datetime,timezone
 from PIL import Image,ImageOps,ImageDraw,ImageFont
 HERE=Path(__file__).resolve().parents[1]
-EXTS={'.jpg','.jpeg','.png','.webp','.gif','.heic','.heif'}
+EXTS={'.jpg','.jpeg','.png','.webp','.gif','.avif','.heic','.heif'}
 def read(path):return json.loads(path.read_text(encoding='utf-8-sig'))
 def save(path,data):path.parent.mkdir(parents=True,exist_ok=True);path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 def sha(path):

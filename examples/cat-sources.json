@@ -1,0 +1,48 @@
+{
+  "example": "cat",
+  "fictionalStory": true,
+  "photos": [
+    {
+      "file": "photo-1529778873920-4da4926a72c2.avif",
+      "source": "Unsplash",
+      "sourceAssetUrl": "https://images.unsplash.com/photo-1529778873920-4da4926a72c2",
+      "authorization": "User states permission; detailed license information to be supplied by maintainer.",
+      "rawSourcePublished": false
+    },
+    {
+      "file": "photo-1574144611937-0df059b5ef3e.avif",
+      "source": "Unsplash",
+      "sourceAssetUrl": "https://images.unsplash.com/photo-1574144611937-0df059b5ef3e",
+      "authorization": "User states permission; detailed license information to be supplied by maintainer.",
+      "rawSourcePublished": false
+    },
+    {
+      "file": "photo-1591881578120-b77f0cf6ca13.avif",
+      "source": "Unsplash",
+      "sourceAssetUrl": "https://images.unsplash.com/photo-1591881578120-b77f0cf6ca13",
+      "authorization": "User states permission; detailed license information to be supplied by maintainer.",
+      "rawSourcePublished": false
+    },
+    {
+      "file": "premium_photo-1673967831980-1d377baaded2.avif",
+      "source": "Unsplash+ / user-licensed",
+      "sourceAssetUrl": "https://images.unsplash.com/premium_photo-1673967831980-1d377baaded2",
+      "authorization": "User states permission; detailed license information to be supplied by maintainer.",
+      "rawSourcePublished": false
+    },
+    {
+      "file": "premium_photo-1675848495392-6b9a3b962df0.avif",
+      "source": "Unsplash+ / user-licensed",
+      "sourceAssetUrl": "https://images.unsplash.com/premium_photo-1675848495392-6b9a3b962df0",
+      "authorization": "User states permission; detailed license information to be supplied by maintainer.",
+      "rawSourcePublished": false
+    },
+    {
+      "file": "premium_photo-1677181729163-33e6b59d5c8f.avif",
+      "source": "Unsplash+ / user-licensed",
+      "sourceAssetUrl": "https://images.unsplash.com/premium_photo-1677181729163-33e6b59d5c8f",
+      "authorization": "User states permission; detailed license information to be supplied by maintainer.",
+      "rawSourcePublished": false
+    }
+  ]
+}
