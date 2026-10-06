@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+workspaces/
+project/
+output/
+tmp/
+sample.html
+*.pdf
+*.mp3
+.env
+.env.*
+dist/

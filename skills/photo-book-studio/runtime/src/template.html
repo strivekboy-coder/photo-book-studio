@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>__TITLE__</title>
+  <style>__STYLES__</style>
+</head>
+<body>
+<svg width="0" height="0" aria-hidden="true" style="position:absolute;pointer-events:none"><defs><filter id="album-gentle-shadow-lift" color-interpolation-filters="sRGB"><feComponentTransfer><feFuncR type="gamma" amplitude="1" exponent="0.72" offset="0"/><feFuncG type="gamma" amplitude="1" exponent="0.72" offset="0"/><feFuncB type="gamma" amplitude="1" exponent="0.72" offset="0"/></feComponentTransfer></filter></defs></svg>
+  <header class="toolbar">
+    <div>
+      <strong>__TITLE__</strong>
+      <span id="status"></span>
+    </div>
+    <div class="toolbar-actions">
+      <button type="button" id="prevButton" aria-label="上一页">←</button>
+      <form class="page-jump" id="pageJump">
+        <label class="sr-only" for="pageInput">跳转到跨页</label>
+        <input id="pageInput" type="number" min="1" step="1" inputmode="numeric" aria-label="跳转到跨页">
+        <span class="counter-separator">/ <span id="counter"></span></span><span id="mobileSide" class="mobile-side"></span>
+        <button type="submit" aria-label="跳转到输入的页码">跳转</button>
+      </form>
+      <button type="button" id="nextButton" aria-label="下一页">→</button>
+    </div>
+  </header>
+  <main id="book" aria-live="polite"></main>
+  <script>window.BOOK = __BOOK__;</script>
+  <script>__APP__</script>
+</body>
+</html>

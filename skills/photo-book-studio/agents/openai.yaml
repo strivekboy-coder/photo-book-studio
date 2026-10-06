@@ -1,0 +1,4 @@
+interface:
+  display_name: "Photo Book Studio"
+  short_description: "Build printable editorial photo books"
+  default_prompt: "Turn my selected photos into a printable photo book while keeping every selected photo."
