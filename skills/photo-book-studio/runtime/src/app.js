@@ -39,6 +39,7 @@
   };
 
   const escapeHtml = value => String(value ?? '').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
+  const assetUrl = value => String(value).split('/').map(part => encodeURIComponent(part).replaceAll("'",'%27')).join('/');
   const protectShortTail = (line) => {
     const chars = [...line];
     if (chars.length <= 7) return escapeHtml(line);
@@ -77,7 +78,7 @@
     const alt = photo.alt || photo.file || '装饰插画';
     const frame = photo.frame;
     const frameStyle = frame ? ' style="' + [`left:${frame.x}%`,`top:${frame.y}%`,`width:${frame.width}%`,`height:${frame.height}%`,`transform:rotate(${frame.rotate || 0}deg)`,`z-index:${frame.z || 1}`].join(';') + '"' : '';
-    return `<figure class="photo${photo.edgeTreatment === 'night-blend' ? ' night-blend' : ''}"${frameStyle}><img data-src="${source}" data-asset-id="${photo.sourceAsset || source}" alt="${alt}" style="--fit:${fit};--position:${position};--filter:${filter}" loading="eager" decoding="async">${caption}</figure>`;
+    return `<figure class="photo${photo.edgeTreatment === 'night-blend' ? ' night-blend' : ''}"${frameStyle}><img data-src="${assetUrl(source)}" data-asset-id="${escapeHtml(photo.sourceAsset || source)}" alt="${escapeHtml(alt)}" style="--fit:${fit};--position:${position};--filter:${filter}" loading="eager" decoding="async">${caption}</figure>`;
   };
 
   const stickerMarkup = (sticker) => {
@@ -91,7 +92,7 @@
       `z-index:${sticker.z ?? 18}`
     ];
     const alt = sticker.alt || sticker.label || '手绘贴纸装饰';
-    return `<figure class="page-sticker" data-sticker-id="${sticker.id || ''}" style="${styles.join(';')}"><img src="${sticker.path}" alt="${alt}" loading="eager"></figure>`;
+    return `<figure class="page-sticker" data-sticker-id="${sticker.id || ''}" style="${styles.join(';')}"><img src="${assetUrl(sticker.path)}" alt="${escapeHtml(alt)}" loading="eager"></figure>`;
   };
 
   const pageMarkup = (page, side, spread) => {
@@ -111,7 +112,7 @@
     const stickers = (page.stickers || []).map(stickerMarkup).join('');
     const generatedClass = spread.generatedAppend ? ' generated-append' : '';
     const artClass = page.backgroundPath ? ' has-art-background' : '';
-    const pageStyle = page.backgroundPath ? ` style="--page-art:url('${page.backgroundPath}');--page-art-opacity:${page.backgroundOpacity ?? .14}"` : '';
+    const pageStyle = page.backgroundPath ? ` style="--page-art:url('${assetUrl(page.backgroundPath)}');--page-art-opacity:${page.backgroundOpacity ?? .14}"` : '';
     return `
     <section class="page ${side} layout-page-${page.layout} family-${page.family || 'editorial'}${toneClass}${generatedClass}${artClass}${page.plainBackground ? " plain-background" : ""}${page.printDateContrast ? " print-date-contrast" : ""}"${pageStyle}>
       <div class="photo-grid layout-${page.layout}">${page.photos.map(photoMarkup).join('')}</div>
@@ -130,11 +131,11 @@
   const coverClass = book.cover.integratedText ? 'cover-front integrated-art' : 'cover-front';
   const coverCopy = book.cover.integratedText ? '' : `<div class="cover-copy"><h1>${escapeHtml(book.title)}</h1><p>${escapeHtml(book.subtitle)}</p></div>`;
   const backStyle = book.cover.backColor ? ` style="background:${book.cover.backColor}"` : '';
-  const backImage = book.cover.backPath ? `<img src="${book.cover.backPath}" alt="封底插画">` : '';
+  const backImage = book.cover.backPath ? `<img src="${assetUrl(book.cover.backPath)}" alt="封底插画">` : '';
   cover.innerHTML = `
     <section class="cover-back${book.cover.backPath ? ' illustrated-back' : ''}" aria-label="封底"${backStyle}>${backImage}</section>
     <section class="${coverClass}" aria-label="正封面">
-      <img src="${coverSource}" alt="封面插画" style="--position:${book.cover.position}">
+      <img src="${assetUrl(coverSource)}" alt="封面插画" style="--position:${book.cover.position}">
       ${coverCopy}
     </section>`;
   root.appendChild(cover);
@@ -143,7 +144,7 @@
     const node = document.createElement('article');
     node.className = 'spread' + (spread.backgroundPhoto ? ' photographic-background' : '');
     const bg = spread.backgroundPhoto;
-    const background = bg ? '<img class="spread-background-photo" data-src="' + bg.path + '" alt="' + (bg.alt || bg.file) + '" style="object-position:' + (bg.position || '50% 50%') + ';filter:' + (bg.filter || 'none') + '" decoding="async">' : '';
+    const background = bg ? '<img class="spread-background-photo" data-src="' + assetUrl(bg.path) + '" alt="' + escapeHtml(bg.alt || bg.file) + '" style="object-position:' + (bg.position || '50% 50%') + ';filter:' + (bg.filter || 'none') + '" decoding="async">' : '';
     node.innerHTML = background + pageMarkup(spread.left, 'left', spread) + pageMarkup(spread.right, 'right', spread);
     root.appendChild(node);
   });
