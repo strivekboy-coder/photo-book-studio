@@ -2,6 +2,8 @@
 
 ### 照片进来，故事成册。
 
+作者：[钟伟伦 · strivekboy-coder](https://github.com/strivekboy-coder)
+
 AI读懂照片，把零散瞬间串成故事。结合画面里的细节与你提供的描述，整理事件、拟写文案，再根据你的照片量身设计模板与布局，配上可爱贴纸、炫酷背景和不同风格的文字。你可以继续提意见修改；内页完成后，再根据整本相册的内容用image制作专属封面。
 
 [![四本示例相册的专属封面](docs/showcase-hero.png)](https://strivekboy-coder.github.io/photo-book-studio/)
@@ -165,3 +167,7 @@ python /your/book/scripts/export_pdf.py --workspace /your/book
 四本主题示例为效果展示，非真实用户故事；人物／动物关系、日期和文案为策展设定。摄影素材来自 Unsplash（含授权素材）及用户提供的授权图库，AI封面、插画和贴纸由image生成。图片与相册成品不属于代码的MIT许可范围，未经许可请勿转载。另有作者真实相册的六个匿名选页。详细许可信息由维护者补充，见[素材说明](examples/README.md)。
 
 项目自有代码与流程采用 [MIT](LICENSE)，字体保留 [SIL OFL](NOTICE.md)。基础功能无需额外创意 skill；印刷封面仍需按印厂包边／沟槽模板确认。
+
+## 首次使用署名
+
+前三次实际调用Skill时，会在对话中简短显示作者名字与项目链接。本机用户计数跨项目和升级保留；不写入相册、不添加水印、不自动打开网页或点赞。用户可明确要求停止。计数仅保存在本机，不上传使用数据；可用 PHOTO_BOOK_STUDIO_STATE_DIR 指定位置。

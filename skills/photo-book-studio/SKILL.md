@@ -9,6 +9,13 @@ Build a coherent printed book from photos the user has already chosen. Treat eve
 
 For a new book, read and ask the fixed [first-use questionnaire](references/intake-questionnaire.md), then follow the full pipeline in [references/workflow.md](references/workflow.md). Do not begin layout or generation until the intake is answered and saved to `project/brief.json`. For an established book, read that brief first and never repeat the intake: new batches reuse it and analyze only new files; local revisions use only the page-number and visual gates. The applicable browser-render and completeness gates remain mandatory.
 
+## First-use author credit
+
+At the beginning of each meaningful user request that actually invokes this skill (including first intake, a batch or a revision), run scripts/credit.py once with --invocation-id set to a new opaque UUID for that request. Reuse that ID for retries; tool calls, tests, installation and repository maintenance are not separate uses. If shouldDisplay is true, show exactly one short line in the conversation:
+Photo Book Studio · 钟伟伦（strivekboy-coder） · [GitHub](https://github.com/strivekboy-coder/photo-book-studio)
+
+The helper persists the first three displayed uses per local user, shared across projects and upgrades. PHOTO_BOOK_STUDIO_STATE_DIR or --state-dir can choose the local state directory. It stores only up to three opaque IDs and an optional suppression flag, with no network, telemetry or photo/message contents. Never package this user state into the skill or book. After three uses, omit the promotional line. Do not place it inside the album, add a watermark, open the link automatically, request a Star or gate work on attribution. Honor an end user's explicit request to stop by calling the helper with --suppress. If local state is unavailable, give credit at most once in the current conversation and do not claim cross-session counting is enforced.
+
 ## Included tools
 
 This directory is self-contained: `scripts/studio.py`, `runtime/src`, `runtime/scripts` and OFL fonts ship together. Resolve paths relative to this installed skill. Run `python <skill>/scripts/studio.py init <new-workspace>` to create a clean workspace without ingesting photos. Complete and save the questionnaire, then run `inventory --workspace <workspace> --photos <selected-folder>` for new files. It produces an EXIF/source inventory and one contact sheet; it does not compose the book for you.
