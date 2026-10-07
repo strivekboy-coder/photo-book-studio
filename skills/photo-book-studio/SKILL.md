@@ -57,7 +57,9 @@ Image-generated covers need not be watercolor, paper collage or handwriting. Cho
 
 Compose from the actual event: choose a focal image or phrase, then decide scale, alignment, whitespace, type hierarchy and palette with structurally useful decoration. Keep neighboring spreads coherent while adapting to source aspect ratios and meaning. Reference styles supply design relationships, not mandatory templates.
 
-For a zine request or reference, read [zine design language](references/zine-design.md) before composing. Resolve editorial/minimal, saturated graphic collage or tactile handmade from the brief; ask a short choice only if unresolved. Save the direction in brief.visual. The bundled role-based recipes are optional starting points. This ordinary zine composition is separate from the four optional image transformations; textures, stickers and generated art may be unnecessary.
+Separate subject/story, visual direction and creative treatments. A couple book can be photographic, editorial, playful or handmade; a travel book need not default to dark green or collage. Choose palette, type, density, image treatment and ornaments from the saved brief and actual photos, rather than repeating showcase signatures. New references and directions remain valid beyond any listed examples. Before the first sample, save a short design intent in brief.visual (e.g. type, palette, spatial rhythm and material cues), then test it on representative photos. Reuse it during revisions; do not turn this into another questionnaire or reread every style guide each turn.
+
+For a zine request or reference, read [zine design language](references/zine-design.md) before composing. Editorial/minimal, saturated graphic collage and tactile handmade are three worked examples, not a closed menu. Resolve the intended direction from the brief; ask a short choice only if unresolved. Save the direction in brief.visual. The bundled role-based recipes are optional starting points. This ordinary zine composition is separate from the four optional image transformations; textures, stickers and generated art may be unnecessary.
 
 ## Typography
 

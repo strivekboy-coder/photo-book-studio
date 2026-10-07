@@ -55,5 +55,29 @@
     "implied group silhouette",
     "screen-like collected stack",
     "perimeter/orbit/connector/punctuation/repetition ornaments"
-  ]
+  ],
+  "tactile-handmade": {
+    "typeRoles": [
+      "readable personal handwriting",
+      "quiet factual metadata"
+    ],
+    "materials": [
+      "source-related paper palette",
+      "selected torn-edge/photo frame",
+      "tape or underprint connecting a group"
+    ],
+    "compositions": [
+      {
+        "focus": "large sincere photograph",
+        "relationship": "small collected details and source-linked ornament at the group edge",
+        "adaptation": "protect meaningful subjects and readable caption whitespace"
+      },
+      {
+        "focus": "everyday fragments",
+        "relationship": "gentle offset/rotation, shared paper field, personal notes",
+        "adaptation": "vary material cues intentionally rather than decorating every slot"
+      }
+    ],
+    "scope": "example direction, not a default for all subjects or zines"
+  }
 }

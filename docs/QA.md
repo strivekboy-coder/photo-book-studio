@@ -18,3 +18,5 @@ Zine design studies (2026-10-07): two portrait-format books, each placing the sa
 The v0.4.0 archive was extracted into a separate directory and initialized successfully. Workspace AGENTS.md now copies during init; a regression test covers that contract. Eleven workflow tests pass locally.
 
 The v0.4.1 studies were recomposed into three body spreads each, still 12 selected/12 placed/0 omitted. New reviewed operations include a loose fragment field, images interwoven with a sentence, a seven-photo contact field and a decorative perimeter. The heart/arc silhouette and screen-stack operations are documented candidates, not claimed as rendered samples.
+
+v0.5.0 adds a third handmade study using exactly the same 12 source IDs once each across four body spreads. Its interiors and final cover were browser-rendered and visually reviewed; existing source-linked stickers are reused. Gallery navigation was checked at desktop, tablet and phone widths, with targets clearing the sticky header. General theme/style/treatment separation is bundled; the full workflow and optional four-route assessment remain intact. No independent-model learning guarantee is claimed.

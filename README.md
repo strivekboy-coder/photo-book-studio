@@ -19,16 +19,18 @@ AI读懂照片，把零散瞬间串成故事。结合画面里的细节与你提
 
 ![情侣相册内页：回家的路与金色拥抱](docs/showcase/couple/spread-04.jpg)
 
-## 同样的照片，两种 zine
+## 同样的照片，三种 zine
 
-同一组12张照片，各自排成一本不同设计语言的小书。极简编辑式与高饱和拼贴都由现有Skill引擎制作，照片全部保留；不是只给页面加纸纹或贴纸。
+同一组12张照片，用三种不同的设计语言重新编排：极简编辑式、高饱和拼贴、纸感手作。每张照片在各自书里出现一次。
 
-| 极简编辑式：拾起日常 | 高饱和拼贴：把日子晒出来 |
-|---|---|
-| [翻看整本](https://strivekboy-coder.github.io/photo-book-studio/showcase/zine-editorial/) | [翻看整本](https://strivekboy-coder.github.io/photo-book-studio/showcase/zine-collage/) |
-| ![极简编辑式内页](docs/showcase/zine-editorial/spread-03.jpg) | ![高饱和拼贴内页](docs/showcase/zine-collage/spread-04.jpg) |
+| 极简编辑式 | 高饱和拼贴 | 纸感手作 |
+|---|---|---|
+| [拾起日常](https://strivekboy-coder.github.io/photo-book-studio/showcase/zine-editorial/) | [把日子晒出来](https://strivekboy-coder.github.io/photo-book-studio/showcase/zine-collage/) | [把日常贴起来](https://strivekboy-coder.github.io/photo-book-studio/showcase/zine-handmade/) |
+| ![图文交织](docs/showcase/zine-editorial/spread-03.jpg) | ![密集照片组](docs/showcase/zine-collage/spread-04.jpg) | ![纸感与专属贴纸](docs/showcase/zine-handmade/spread-04.jpg) |
 
-自由碎片、图文交织、密集照片条与结构性装饰也能按故事选择；风格选择、构图判断与审核方法已随Skill提供；只说“zine”时会帮你确定方向。下载后不需要读取作者的聊天记录，也不要求额外生图Skill才能排出zine。
+告诉AI你喜欢的风格，同一组照片，也能换一种表达。这是三种示范，不是固定模板菜单。主题、视觉风格与创意处理分别决定：情侣、宠物、旅行都可以选择适合自己的设计。问卷、照片清单、故事文案、贴纸评估、四条创意路线、封面和审核流程仍正常运行。
+
+风格与构图指引随Skill提供，不依赖作者聊天记录；额外创意Skills用于适合的资产处理，不要求每本书使用全部效果。
 
 ## 根据你的照片，量身做一本
 

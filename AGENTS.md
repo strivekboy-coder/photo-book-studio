@@ -11,3 +11,5 @@ For code changes, run python -m unittest discover -s tests -v. For renderer or e
 Read only the relevant references. Do not run the photo-book questionnaire for repository maintenance, installation or bug fixes. Real-photo examples require a source/permission manifest and must not be described as validated before visual review.
 
 Style guidance belongs in the installed skill, not only in repository instructions or chat history. Derive transferable composition criteria from rendered examples, distinguish ordinary zine layout from optional generated-art routes, and verify substantial new guidance on different source photographs. Preserve user preference rather than imposing the example palette or template. Keep third-party reference links credited without bundling their source assets or templates.
+
+Keep subject/story, visual style and optional asset treatments separate. Worked zine studies are an open reference set, not a menu limiting other books or new design directions. Preserve the full pipeline and all four creative-route suitability checks across styles, without forcing every route into every book.

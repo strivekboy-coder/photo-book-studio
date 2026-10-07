@@ -1,6 +1,6 @@
-# Zine conversion review policy
+# Four optional creative transformations
 
-Run this review after every new photo batch has been placed and visually checked.
+Run this review after every new photo batch has been placed and visually checked, whatever the book theme or visual direction. These four asset treatments do not define ordinary zine layout and are not restricted to zine books. Assess all four; permission, suitability and available tools determine which are used.
 
 ## Non-negotiable content rule
 

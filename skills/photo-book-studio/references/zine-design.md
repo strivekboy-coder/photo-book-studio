@@ -28,7 +28,9 @@ Compose the event before the template. Identify the focal photograph or phrase, 
 
 ## Tactile handmade
 
-Keep the existing torn-photo, handwriting and source-related illustration approaches available. Use tactile edges to connect or frame content, rather than treating them as proof of zine style. Do not import this texture into the other directions automatically.
+Build a tactile language from the story: warm or cool paper, layered photographs, gentle offsets, selected fibrous edges, handwritten observations and source-linked ornaments. Use a few recurring material cues for continuity rather than applying tape/shadows to every photograph. Contrast a large sincere image with smaller collected fragments; leave paper visible between clusters. Borders and underprints should connect content or imply a memory insert, not hide faces or shrink every image.
+
+Readable handwriting can carry personal remarks; dates and supporting facts may use quiet sans/serif type. Stickers should touch or relate to a group, phrase or margin rhythm. Match cat/coffee/wave/transport motifs to their actual event. CSS masks are non-destructive and require subject-safe edge review. A paper effect does not require a generated derivative; use the four creative routes independently when a strong candidate warrants one.
 
 ## Spatial and decorative operations
 
@@ -59,6 +61,10 @@ For a new substantial style reference, compare two or three representative sprea
 
 The independent studies use the same 12 authorized stock photos, each exactly once, with different spatial and color systems. Four other photos were used in two additional two-spread adaptation fixtures. All interiors were browser-rendered and visually inspected. Covers were generated after that review. The fictional travel/daily-life stories are demonstration copy.
 
-Public examples: [editorial study](https://strivekboy-coder.github.io/photo-book-studio/showcase/zine-editorial/) and [graphic collage study](https://strivekboy-coder.github.io/photo-book-studio/showcase/zine-collage/).
+Public examples: [editorial study](https://strivekboy-coder.github.io/photo-book-studio/showcase/zine-editorial/) [graphic collage study](https://strivekboy-coder.github.io/photo-book-studio/showcase/zine-collage/) and [handmade study](https://strivekboy-coder.github.io/photo-book-studio/showcase/zine-handmade/).
 
 Visual reference: Flipin's publicly viewable [editorial examples](https://flipin.pages.dev/images/styles/style02all.jpg?v=an7) and [collage examples](https://flipin.pages.dev/images/styles/style01all.jpg?v=an7), reviewed 2026-10-07. No Flipin code, photos, templates or example screenshots are included in this skill. The public links are attribution and optional inspiration; all necessary guidance is above and ships locally.
+
+The third handmade study uses the same 12 source IDs once each across four body spreads, with reused source-linked stickers and non-destructive paper-edge frames. Three worked directions demonstrate relationships; they are not fixed presets or a promise of identical results from every model.
+
+Worked operations: the editorial study has an offset fragment field and photos embedded in a sentence; the graphic study has a perimeter rhythm and dense photo field; the handmade study uses selected paper frames, gently offset clusters and source-linked stickers. These are decision examples to adapt, not a fixed page sequence.
