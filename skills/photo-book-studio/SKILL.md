@@ -61,6 +61,8 @@ Separate subject/story, visual direction and creative treatments. A couple book 
 
 For a zine request or reference, read [zine design language](references/zine-design.md) before composing. Editorial/minimal, saturated graphic collage and tactile handmade are three worked examples, not a closed menu. Resolve the intended direction from the brief; ask a short choice only if unresolved. Save the direction in brief.visual. The bundled role-based recipes are optional starting points. This ordinary zine composition is separate from the four optional image transformations; textures, stickers and generated art may be unnecessary.
 
+For a photographic journal or a reference using panoramic anchors, floating insets, support columns or quiet text fields, read [photographic narrative layouts](references/photographic-layouts.md). These relationships work across themes and do not force a zine aesthetic. Keep tutorial arrows/placeholders out of finished output, and validate source-fit before imitating a crop.
+
 ## Typography
 
 Choose no more than three font roles for the selected direction. Handwritten/Kai, serif and playful display faces suit some books; editorial or graphic zines may use a restrained sans-serif system with scale and weight contrasts. Do not impose a handwritten face or poetic wording on every style. Variation should come from placement, scale, direction, line breaks, color, and slight rotation. Keep paragraphs rare outside dedicated writing pages and preserve a clean overall silhouette.

@@ -10,14 +10,16 @@ AI读懂照片，把零散瞬间串成故事。结合画面里的细节与你提
 
 ## 先翻四本小书
 
-| 猫咪日常 | 情侣日记 | 慕尼黑纸刊 | 成都英文日记 |
+| 猫咪日常 | 情侣日记 | 摄影叙事 | 成都英文日记 |
 |---|---|---|---|
-| [今天也很会偷懒](https://strivekboy-coder.github.io/photo-book-studio/showcase/cat/) | [和你，慢慢来](https://strivekboy-coder.github.io/photo-book-studio/showcase/couple/) | [慢一点，慕尼黑](https://strivekboy-coder.github.io/photo-book-studio/showcase/munich/) | [Slow Days in Chengdu](https://strivekboy-coder.github.io/photo-book-studio/showcase/chengdu/) |
-| 6张照片，把家变软。 | 10张照片，把日常写成情书。 | 17张照片，把风景装进口袋。 | 17张照片，英文记录慢旅行。 |
+| [今天也很会偷懒](https://strivekboy-coder.github.io/photo-book-studio/showcase/cat/) | [和你，慢慢来](https://strivekboy-coder.github.io/photo-book-studio/showcase/couple/) | [有风的日子](https://strivekboy-coder.github.io/photo-book-studio/showcase/photographic-story/) | [Slow Days in Chengdu](https://strivekboy-coder.github.io/photo-book-studio/showcase/chengdu/) |
+| 6张照片，把家变软。 | 10张照片，把日常写成情书。 | 12张照片，用场景、细节与留白讲故事。 | 17张照片，英文记录慢旅行。 |
 
 ![猫咪相册内页：哈欠、巡逻与手绘贴纸](docs/showcase/cat/spread-03.jpg)
 
 ![情侣相册内页：回家的路与金色拥抱](docs/showcase/couple/spread-04.jpg)
+
+[![摄影叙事：跨页河景与浮动照片](docs/showcase/photographic-story/spread-03.jpg)](https://strivekboy-coder.github.io/photo-book-studio/showcase/photographic-story/?page=2)
 
 ## 同样的照片，三种 zine
 

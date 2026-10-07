@@ -11,3 +11,5 @@ Prefer `layout: composed` for new custom pages. Supply each photo's percentage `
 Empty pages use `layout: empty`, `photos: []`. Background color can use `tone`; available base tones include cream, sky, sage, parchment, blush and white. A color not in the engine should be implemented deliberately in the renderer rather than silently assumed supported. Source-derived backgrounds use backgroundPath and opacity. Letters use paragraph-aware `letter`, not caption markup.
 
 The engine includes older custom layout classes from its development project, but they are not required for new books. Choose `composed` or a suitable existing family; don't read or repeat every legacy selector. After changing page aspect ratio, reconsider frame/caption coordinates and re-render instead of copying percentages blindly.
+
+For photographic narrative references, see photographic-layouts.md: panoramic anchor/inset, environmental hero/detail field, narrow photo column and quiet photo/text pause. These extend the starting structures without assigning one style to every book.
