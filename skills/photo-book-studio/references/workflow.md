@@ -16,7 +16,7 @@ Save the resolved answers to `project/brief.json` before layout begins. Read the
 4. Group by event and importance. Do not force one day into one spread.
 5. Review every image at contact-sheet scale; inspect crop-sensitive and hero images at full resolution.
 6. Allocate enough spreads before choosing templates. Prefer another spread over tiny meaningful photographs.
-7. Choose or adapt layouts from the real aspect ratios, faces, gestures, scenery, and visual weight.
+7. Establish focus, scale relationships, alignment, whitespace, typography and palette from the real aspect ratios, faces, gestures, scenery, and visual weight; then choose or adapt layouts. For a zine brief, read zine-design.md once when choosing the direction.
 8. Write or polish concise event-level copy. Preserve facts, names, jokes, and emotional meaning.
 9. Place text in rendered whitespace with readable contrast and natural line breaks.
 10. Add source-related backgrounds, overlaps, and stickers only when they improve hierarchy or story.
@@ -52,7 +52,7 @@ When the saved brief is stable and a clear new batch contains roughly forty phot
 
 ## Visual gate
 
-Inspect rendered pixels for face and landmark crops, tiny images, accidental black borders, text contrast, orphaned short lines, sticker collisions, excessive overlap, gutter safety, background dominance, and spread-to-spread rhythm. JSON coordinates and automated placement scores are proposals, not proof.
+Inspect rendered pixels for face and landmark crops, tiny images, accidental black borders, text contrast, orphaned short lines, sticker collisions, excessive overlap, gutter safety, background dominance, and spread-to-spread rhythm. JSON coordinates and automated placement scores are proposals, not proof. Also judge whether the composition works without optional decoration, whether offset frames share intentional relationships, and whether type/palette support the saved direction.
 
 For a new book, batch or substantial redesign, compare consecutive rendered spreads in groups of roughly four to six. Look for repeated frame silhouettes, backgrounds competing with photographs, decorative art duplicating an adjacent image, and captions that all shrink into bottom annotations. Check whether one intended focus dominates each spread and whether distinct events have an appropriate opening. Change only clear weaknesses; do not add chapter pages, rotate templates, generate art or enforce variety for its own sake. New batches need their changed pages and immediate neighbors; local revisions do not trigger a whole-book review.
 

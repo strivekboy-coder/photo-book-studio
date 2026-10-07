@@ -12,6 +12,8 @@ class WorkflowTests(unittest.TestCase):
   (self.root/'project/book.json').write_text(json.dumps(book),encoding='utf-8');return subprocess.run(['node',str(self.root/'scripts/build.mjs')],capture_output=True,text=True)
  def test_fresh_install_carries_runtime(self):
   result=self.build(self.base);self.assertEqual(result.returncode,0,result.stderr);audit=json.loads((self.root/'project/build-audit.json').read_text(encoding='utf-8'));self.assertEqual((audit['selected'],audit['placed'],audit['omitted']),(8,8,0))
+ def test_fresh_workspace_receives_agent_contract(self):
+  contract=self.root/'AGENTS.md';self.assertTrue(contract.is_file());text=contract.read_text(encoding='utf-8');self.assertIn('photo-book-studio',text);self.assertIn('project/brief.json',text)
  def test_duplicate_rejected(self):
   book=json.loads(json.dumps(self.base));book['spreads'][0]['left']['photos'].append(book['spreads'][0]['left']['photos'][0]);self.assertNotEqual(self.build(book).returncode,0)
  def test_omission_rejected(self):

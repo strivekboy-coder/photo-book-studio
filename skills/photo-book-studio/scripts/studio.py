@@ -16,7 +16,7 @@ def init(args):
  root=Path(args.workspace).resolve()
  if (root/'project/book.json').exists():raise ValueError('Existing book found. Initialization will not overwrite it.')
  for name in ('src','scripts','assets'):shutil.copytree(HERE/'runtime'/name,root/name,dirs_exist_ok=True)
- for name in ('requirements.txt','requirements-print.txt'):shutil.copy2(HERE/'runtime'/name,root/name)
+ for name in ('requirements.txt','requirements-print.txt','AGENTS.md'):shutil.copy2(HERE/'runtime'/name,root/name)
  (root/'assets/photos').mkdir(parents=True,exist_ok=True)
  (root/'assets/cover-placeholder.svg').write_text('<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200"><rect width="1200" height="1200" fill="#f5f0e7"/></svg>',encoding='utf-8')
  brief={'intakeComplete':False,'story':{},'output':{},'selection':{},'visual':{'coverTiming':{'value':'after-interior-and-whole-book-review','source':'inferred'}},'copy':{},'permissions':{}}

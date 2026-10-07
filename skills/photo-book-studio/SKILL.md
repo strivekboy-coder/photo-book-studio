@@ -53,9 +53,15 @@ For a longer opening, ending or personal letter, recommend a dedicated writing p
 
 Image-generated covers need not be watercolor, paper collage or handwriting. Choose photographic, graphic/minimal, illustrated or mixed-media cover language from the actual brief; a multi-book showcase should demonstrate materially different design directions rather than color variants.
 
+## Composition and style routing
+
+Compose from the actual event: choose a focal image or phrase, then decide scale, alignment, whitespace, type hierarchy and palette before decoration. Keep neighboring spreads coherent while adapting to source aspect ratios and meaning. Reference styles supply design relationships, not mandatory templates.
+
+For a zine request or reference, read [zine design language](references/zine-design.md) before composing. Resolve editorial/minimal, saturated graphic collage or tactile handmade from the brief; ask a short choice only if unresolved. Save the direction in brief.visual. The bundled role-based recipes are optional starting points. This ordinary zine composition is separate from the four optional image transformations; textures, stickers and generated art may be unnecessary.
+
 ## Typography
 
-Use no more than three font roles: a literary handwritten or Kai face for poems, a serif for dates and location labels, and one playful display face for short notes. Variation should come from placement, scale, direction, line breaks, color, and slight rotation. Keep paragraphs rare outside dedicated writing pages and preserve a clean overall silhouette.
+Choose no more than three font roles for the selected direction. Handwritten/Kai, serif and playful display faces suit some books; editorial or graphic zines may use a restrained sans-serif system with scale and weight contrasts. Do not impose a handwritten face or poetic wording on every style. Variation should come from placement, scale, direction, line breaks, color, and slight rotation. Keep paragraphs rare outside dedicated writing pages and preserve a clean overall silhouette.
 
 Place typography in calm image regions or page whitespace. Avoid the gutter and trim safety zone. A caption may overlap a photo when contrast is deliberate and the subject remains unobstructed.
 

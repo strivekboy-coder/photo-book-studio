@@ -1,0 +1,51 @@
+{
+  "purpose": "Role-based design relationships; adapt to the actual photos, never apply as fixed coordinates",
+  "editorial": {
+    "typeRoles": [
+      "clear sans event phrase",
+      "readable supporting copy",
+      "quiet factual index"
+    ],
+    "compositions": [
+      {
+        "focus": "vertical landmark or gesture",
+        "relationship": "title above lower hero; opposite two offset support frames connected by a shared edge",
+        "adaptation": "keep people/landmark intact; move text rather than unsafe cropping"
+      },
+      {
+        "focus": "place or action",
+        "relationship": "large environmental image opposite two separated daily details",
+        "adaptation": "group by event; preserve sufficient scale for meaningful interactions"
+      }
+    ],
+    "palette": "pale field plus source colors; accent optional"
+  },
+  "graphic-collage": {
+    "typeRoles": [
+      "bold display emphasis",
+      "short supporting phrase",
+      "quiet factual index"
+    ],
+    "compositions": [
+      {
+        "focus": "hero photograph",
+        "relationship": "large structural color plane opposite an offset pair; one emphasis phrase",
+        "adaptation": "sample source colors; reduce saturation or add neutral pause when photography competes"
+      },
+      {
+        "focus": "centered compact subject",
+        "relationship": "optional oval with generous margins and short headline",
+        "adaptation": "use rectangle/contain for hands, full bodies and architectural context"
+      }
+    ],
+    "palette": "limited complementary fields and dark anchor, not compulsory yellow/pink"
+  },
+  "review": [
+    "One clear focus?",
+    "Shared edges or intentional spatial links?",
+    "Whitespace useful?",
+    "Readable normal-size copy?",
+    "Subjects and source IDs intact?",
+    "Neighboring rhythm coherent?"
+  ]
+}

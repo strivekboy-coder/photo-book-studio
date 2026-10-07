@@ -9,3 +9,5 @@ For a skill/workflow change, keep intake once per new book, source IDs and autho
 For code changes, run python -m unittest discover -s tests -v. For renderer or export changes, inspect browser pixels and PDF dimensions with a clean fixture; tests alone do not certify aesthetics. Do not regenerate unrelated real books.
 
 Read only the relevant references. Do not run the photo-book questionnaire for repository maintenance, installation or bug fixes. Real-photo examples require a source/permission manifest and must not be described as validated before visual review.
+
+Style guidance belongs in the installed skill, not only in repository instructions or chat history. Derive transferable composition criteria from rendered examples, distinguish ordinary zine layout from optional generated-art routes, and verify substantial new guidance on different source photographs. Preserve user preference rather than imposing the example palette or template. Keep third-party reference links credited without bundling their source assets or templates.

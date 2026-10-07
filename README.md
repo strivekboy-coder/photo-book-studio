@@ -19,6 +19,17 @@ AI读懂照片，把零散瞬间串成故事。结合画面里的细节与你提
 
 ![情侣相册内页：回家的路与金色拥抱](docs/showcase/couple/spread-04.jpg)
 
+## 同样的照片，两种 zine
+
+同一组12张照片，各自排成一本不同设计语言的小书。极简编辑式与高饱和拼贴都由现有Skill引擎制作，照片全部保留；不是只给页面加纸纹或贴纸。
+
+| 极简编辑式：拾起日常 | 高饱和拼贴：把日子晒出来 |
+|---|---|
+| [翻看整本](https://strivekboy-coder.github.io/photo-book-studio/showcase/zine-editorial/) | [翻看整本](https://strivekboy-coder.github.io/photo-book-studio/showcase/zine-collage/) |
+| ![极简编辑式内页](docs/showcase/zine-editorial/spread-02.jpg) | ![高饱和拼贴内页](docs/showcase/zine-collage/spread-02.jpg) |
+
+风格选择、构图判断与审核方法已随Skill提供；只说“zine”时会帮你确定方向。下载后不需要读取作者的聊天记录，也不要求额外生图Skill才能排出zine。
+
 ## 根据你的照片，量身做一本
 
 - **AI读懂照片，把零散瞬间串成故事。** 结合人物、场景与小细节，以及你提供的回忆，整理事件、拟写标题和旁白；没写文案的地方，也能帮你起个头。
