@@ -55,7 +55,7 @@ Image-generated covers need not be watercolor, paper collage or handwriting. Cho
 
 ## Composition and style routing
 
-Compose from the actual event: choose a focal image or phrase, then decide scale, alignment, whitespace, type hierarchy and palette before decoration. Keep neighboring spreads coherent while adapting to source aspect ratios and meaning. Reference styles supply design relationships, not mandatory templates.
+Compose from the actual event: choose a focal image or phrase, then decide scale, alignment, whitespace, type hierarchy and palette with structurally useful decoration. Keep neighboring spreads coherent while adapting to source aspect ratios and meaning. Reference styles supply design relationships, not mandatory templates.
 
 For a zine request or reference, read [zine design language](references/zine-design.md) before composing. Resolve editorial/minimal, saturated graphic collage or tactile handmade from the brief; ask a short choice only if unresolved. Save the direction in brief.visual. The bundled role-based recipes are optional starting points. This ordinary zine composition is separate from the four optional image transformations; textures, stickers and generated art may be unnecessary.
 

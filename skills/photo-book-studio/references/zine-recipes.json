@@ -41,11 +41,19 @@
     "palette": "limited complementary fields and dark anchor, not compulsory yellow/pink"
   },
   "review": [
-    "One clear focus?",
+    "Clear visual center, mass and eye movement?",
     "Shared edges or intentional spatial links?",
     "Whitespace useful?",
     "Readable normal-size copy?",
     "Subjects and source IDs intact?",
     "Neighboring rhythm coherent?"
+  ],
+  "operations": [
+    "loose fragment field",
+    "photo-and-type sentence",
+    "dense contact sheet",
+    "implied group silhouette",
+    "screen-like collected stack",
+    "perimeter/orbit/connector/punctuation/repetition ornaments"
   ]
 }

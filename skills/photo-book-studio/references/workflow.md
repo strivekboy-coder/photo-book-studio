@@ -52,7 +52,7 @@ When the saved brief is stable and a clear new batch contains roughly forty phot
 
 ## Visual gate
 
-Inspect rendered pixels for face and landmark crops, tiny images, accidental black borders, text contrast, orphaned short lines, sticker collisions, excessive overlap, gutter safety, background dominance, and spread-to-spread rhythm. JSON coordinates and automated placement scores are proposals, not proof. Also judge whether the composition works without optional decoration, whether offset frames share intentional relationships, and whether type/palette support the saved direction.
+Inspect rendered pixels for face and landmark crops, tiny images, accidental black borders, text contrast, orphaned short lines, sticker collisions, excessive overlap, gutter safety, background dominance, and spread-to-spread rhythm. JSON coordinates and automated placement scores are proposals, not proof. Also judge whether each element contributes to mass, flow or hierarchy, whether offset frames share intentional relationships, and whether type/palette support the saved direction.
 
 For a new book, batch or substantial redesign, compare consecutive rendered spreads in groups of roughly four to six. Look for repeated frame silhouettes, backgrounds competing with photographs, decorative art duplicating an adjacent image, and captions that all shrink into bottom annotations. Check whether one intended focus dominates each spread and whether distinct events have an appropriate opening. Change only clear weaknesses; do not add chapter pages, rotate templates, generate art or enforce variety for its own sake. New batches need their changed pages and immediate neighbors; local revisions do not trigger a whole-book review.
 

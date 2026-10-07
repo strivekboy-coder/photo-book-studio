@@ -16,6 +16,6 @@ For print, distinguish viewer spreads from single faces, confirm printer dimensi
 
 For a meaningful event, consider a source-photo torn background with calm areas for photos/text. For long opening/ending copy, propose dedicated writing pages and optional story-related image-generated writing paper before reducing type. Choose cover medium from the brief; image generation does not imply watercolor or paper collage.
 
-Compose before decorating: establish the focal image/phrase, scale relationships, alignment, useful whitespace, type hierarchy and source-related palette. Adapt these relationships to the user's photos rather than repeating fixed frames. The ordinary composition should remain effective without optional art or stickers.
+Compose before decorating: establish the focal image/phrase, scale relationships, alignment, useful whitespace, type hierarchy and source-related palette. Adapt these relationships to the user's photos rather than repeating fixed frames. Ornaments may establish borders, connections and rhythm; judge their role rather than prohibiting them.
 
 For a zine brief, use the installed skill's references/zine-design.md. Resolve editorial/minimal, saturated graphic collage or tactile handmade only when unclear, and save the direction in brief.visual. A zine is not defined by torn paper or handwriting. Read style details on demand; local revisions reuse the saved design system. During visual review, check spatial relationships and palette/type consistency as well as crop and text correctness.

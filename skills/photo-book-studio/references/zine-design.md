@@ -8,12 +8,12 @@ If the supplied reference or brief is clear, infer and save the direction. If on
 
 ## Principles shared with every style
 
-Compose the event before the template. Identify the focal photograph or phrase, then balance scale, alignment, whitespace and reading order. Choose a small type system and coherent color relationships across neighboring spreads. Design the composition before adding decoration. A blank region can connect two images or create a pause; it is not an invitation to fill it. Preserve every selected source and its meaning, even when a tiny fragment would look stylish.
+Compose the event before the template. Identify the focal photograph or phrase, then balance scale, alignment, whitespace and reading order. Choose a small type system and coherent color relationships across neighboring spreads. Choose decoration together with the composition when it frames, connects, interrupts or sets rhythm; optional ornaments may be decided later. A blank region can connect two images or create a pause; it is not an invitation to fill it. Preserve every selected source and its meaning, even when a tiny fragment would look stylish.
 
 ## Editorial / minimal
 
 - A warm white or clean pale field, sharply distinct image sizes, purposeful whitespace and mostly square-edged photographs.
-- Establish a few recurring edges and intervals. An offset detail still shares an edge, axis or spacing relationship with another element. Avoid a scatter of arbitrary centered rectangles.
+- Establish a few recurring edges and intervals. An offset detail can share an edge, axis, varying interval or color relationship with another element. Controlled irregularity can organize a loose field around a center of gravity rather than a common straight edge.
 - A restrained sans-serif can be the primary face. Use clear event phrases, optional short commentary and small factual indexing. Handwriting and serif type are choices, not defaults for every zine.
 - Useful compositions: a title with a lower hero opposite an offset pair; a tall hero opposite two separated details; a full-bleed detail opposite an open fragment field; a type-led pause. Adapt to source orientation and story, not a mandatory sequence.
 - Small numbering provides continuity, never essential story copy. Make body text readable at actual output size. Avoid using tiny type merely to imitate an editorial reference.
@@ -30,6 +30,19 @@ Compose the event before the template. Identify the focal photograph or phrase, 
 
 Keep the existing torn-photo, handwriting and source-related illustration approaches available. Use tactile edges to connect or frame content, rather than treating them as proof of zine style. Do not import this texture into the other directions automatically.
 
+## Spatial and decorative operations
+
+Choose an operation for its narrative or visual job, then choose the motif. A star border is one instance of perimeter rhythm, not a default zine accessory. Related alternatives include dot/dash stitching, leaves around a garden memory, postage marks around a travel insert, waves guiding river photos, ticket fragments linking a journey, and bright underlines or blocks joining text. Use geometric CSS/SVG for simple native marks; use image tools for requested illustrated assets.
+
+- **Loose fragment field:** vary size and position around a clear visual center. Balance mass and gaps, retain a few relationships, and let an offset fragment interrupt the grid deliberately. Not every frame needs a shared edge or uniform gap.
+- **Photographs in a sentence:** images function as words, pauses or emphasis within large type. Build the reading sequence with actual text and image extents. Favor details that survive a short strip; keep faces/meaningful interactions in larger frames. Do not take a full-page screenshot as the only editable source.
+- **Dense contact sheet or visual receipt:** repeat slots, thin dividers, index marks or row bands to make a cohesive field. Modulate one size or one gap to avoid a lifeless grid. Density is a valid beat, not a fault by itself; essential subjects must still read at the intended output size.
+- **Silhouette group:** arrange multiple photographs into an implied heart, arc, diagonal or other meaningful silhouette. Favor the group's outline and clear subjects over a destructive per-photo mask. Important portraits remain large elsewhere only when duplication is explicitly allowed; otherwise design the group to keep them legible or choose another operation.
+- **Screen-like or scrapbook stack:** use panels, small headers, overlapping edges, a deliberate cursor/selection-like accent or ticket layers to create a collected-memory feeling. Do not invent real chats, device metadata or private messages. Keep the motif subordinate to truthful content.
+- **Ornament topology:** marks can run around the perimeter, orbit a subject, bridge frames, punctuate a phrase, fill an intentional patterned field or create a recurring rhythm. Decide where the eye should travel before selecting stars/flowers/dots/tape. Match scale, density, color and continuity to the photos; protect faces and readable copy.
+
+Consider these operations when the brief/reference supports them; do not add all of them to every book or enforce a creativity quota. A plain spread and an expressive spread can belong to the same book. Audit whether the result has deliberate mass, flow, hierarchy and readable subjects, not whether it is regular or irregular.
+
 ## Adapt from a reference
 
 Extract design relationships: focal scale, shape, alignment, palette, type roles and density. Recompose with the new photos; do not copy the reference's coordinates, captions, brand, illustrations or source photographs. When a user requires a specific reference and it cannot be viewed, report that before claiming to match it; honor any explicit stopping instruction.
@@ -38,7 +51,7 @@ Keep the layout data in book.json and any necessary styling in the workspace's s
 
 ## Review and learning
 
-First ask whether the composition works without optional decoration. Check the focal hierarchy, relationships between frames, useful whitespace, restrained type roles, palette continuity and whole-book rhythm. Then check faces, crops, contrast, normal-size text and gutter/trim safety. Inspect neighboring spreads and correct visible failures, without enforcing quotas or alternating templates mechanically.
+First ask how each element participates in the composition. Remove redundant decoration, but do not strip away structural ornaments just to satisfy a decoration-free test. Check the focal hierarchy, relationships between frames, useful whitespace, restrained type roles, palette continuity and whole-book rhythm. Then check faces, crops, contrast, normal-size text and gutter/trim safety. Inspect neighboring spreads and correct visible failures, without enforcing quotas or alternating templates mechanically.
 
 For a new substantial style reference, compare two or three representative spreads before extending the book. To improve this reusable guidance, distinguish a transferable reason from a one-photo coordinate fix. Try the reason on materially different photos before generalizing it. A same-agent adaptation demonstrates a candidate rule; it does not prove independent models or users will reproduce the result.
 

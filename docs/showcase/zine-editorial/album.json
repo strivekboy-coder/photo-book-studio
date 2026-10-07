@@ -2,12 +2,11 @@
   "title": "拾起日常",
   "description": "同一组12张照片的独立 zine 风格研究",
   "selectedPhotos": 12,
-  "viewerSpreads": 5,
+  "viewerSpreads": 4,
   "pages": [
-    "spread-02.jpg",
-    "spread-03.jpg",
-    "spread-04.jpg",
-    "spread-05.jpg"
+    "spread-02.jpg?v=041",
+    "spread-03.jpg?v=041",
+    "spread-04.jpg?v=041"
   ],
   "cover": "cover.jpg",
   "pageRatio": 0.7047619047619048

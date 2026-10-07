@@ -26,9 +26,9 @@ AI读懂照片，把零散瞬间串成故事。结合画面里的细节与你提
 | 极简编辑式：拾起日常 | 高饱和拼贴：把日子晒出来 |
 |---|---|
 | [翻看整本](https://strivekboy-coder.github.io/photo-book-studio/showcase/zine-editorial/) | [翻看整本](https://strivekboy-coder.github.io/photo-book-studio/showcase/zine-collage/) |
-| ![极简编辑式内页](docs/showcase/zine-editorial/spread-02.jpg) | ![高饱和拼贴内页](docs/showcase/zine-collage/spread-02.jpg) |
+| ![极简编辑式内页](docs/showcase/zine-editorial/spread-03.jpg) | ![高饱和拼贴内页](docs/showcase/zine-collage/spread-04.jpg) |
 
-风格选择、构图判断与审核方法已随Skill提供；只说“zine”时会帮你确定方向。下载后不需要读取作者的聊天记录，也不要求额外生图Skill才能排出zine。
+自由碎片、图文交织、密集照片条与结构性装饰也能按故事选择；风格选择、构图判断与审核方法已随Skill提供；只说“zine”时会帮你确定方向。下载后不需要读取作者的聊天记录，也不要求额外生图Skill才能排出zine。
 
 ## 根据你的照片，量身做一本
 
