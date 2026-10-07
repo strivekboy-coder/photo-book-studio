@@ -12,7 +12,7 @@ For a new book, read and ask the fixed [first-use questionnaire](references/inta
 ## First-use author credit
 
 At the beginning of each meaningful user request that actually invokes this skill (including first intake, a batch or a revision), run scripts/credit.py once with --invocation-id set to a new opaque UUID for that request. Reuse that ID for retries; tool calls, tests, installation and repository maintenance are not separate uses. If shouldDisplay is true, show exactly one short line in the conversation:
-Photo Book Studio · 钟伟伦（strivekboy-coder） · [GitHub](https://github.com/strivekboy-coder/photo-book-studio)
+Photo Book Studio · weilun · [GitHub](https://github.com/strivekboy-coder/photo-book-studio)
 
 The helper persists the first three displayed uses per local user, shared across projects and upgrades. PHOTO_BOOK_STUDIO_STATE_DIR or --state-dir can choose the local state directory. It stores only up to three opaque IDs and an optional suppression flag, with no network, telemetry or photo/message contents. Never package this user state into the skill or book. After three uses, omit the promotional line. Do not place it inside the album, add a watermark, open the link automatically, request a Star or gate work on attribution. Honor an end user's explicit request to stop by calling the helper with --suppress. If local state is unavailable, give credit at most once in the current conversation and do not claim cross-session counting is enforced.
 

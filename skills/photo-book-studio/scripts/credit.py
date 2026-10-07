@@ -2,7 +2,7 @@
 from pathlib import Path
 import argparse,json,os,sqlite3
 
-NAME="钟伟伦（strivekboy-coder）"
+NAME="weilun"
 URL="https://github.com/strivekboy-coder/photo-book-studio"
 def main():
  p=argparse.ArgumentParser(description=__doc__)

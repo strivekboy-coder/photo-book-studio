@@ -2,7 +2,7 @@
 
 ### 照片进来，故事成册。
 
-作者：[钟伟伦 · strivekboy-coder](https://github.com/strivekboy-coder)
+作者：[weilun](https://github.com/strivekboy-coder)
 
 AI读懂照片，把零散瞬间串成故事。结合画面里的细节与你提供的描述，整理事件、拟写文案，再根据你的照片量身设计模板与布局，配上可爱贴纸、炫酷背景和不同风格的文字。你可以继续提意见修改；内页完成后，再根据整本相册的内容用image制作专属封面。
 
