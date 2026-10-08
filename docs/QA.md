@@ -30,3 +30,5 @@ v0.7.0: adds opt-in Plog, browser fine-tuning, sharing-image exports and seven c
 
 
 Publication choice corrected before release: owner rejected the stock Plog/new effect showcase. Only one approved v1 night page is public, with user-reported friend consent. No raw photos or other private pages are published; new-route trials remain internal.
+
+Presentation update: new Plog/手账本 mode is labeled 新功能！; only this mode advertises basic manual editing. Current public night image is a flattened JPEG with four opaque generated paper-heart seals, each face region inspected. Unmasked current asset removed; prior Git history was not rewritten. Revised nature/coffee/architecture creative examples now join the original four effects. Desktop and phone rendering passed without horizontal overflow or JS errors. XHS copy saved as a draft; no social post published.

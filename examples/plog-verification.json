@@ -31,6 +31,7 @@
   },
   "publicationConsent": "User-confirmed friend consent for one approved v1 finished page only",
   "publicPageCount": 1,
-  "newTrialsPublic": false,
-  "aestheticReview": "Previous stock/showcase trials explicitly rejected; one approved v1 retained"
+  "newTrialsPublic": "Three revised nature/coffee/architecture outputs now approved for creative-effects section; older rejected trials not shown",
+  "aestheticReview": "Previous stock/showcase trials explicitly rejected; one approved v1 retained",
+  "publicFacesCovered": 4
 }

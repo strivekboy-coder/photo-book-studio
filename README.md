@@ -47,11 +47,13 @@ AI读懂照片，把零散瞬间串成故事。结合画面里的细节与你提
 - **相册完成，再画封面。** 根据整本的内容、色彩与情绪，用可用的image工具制作最终封面。
 - **选中的照片，都放进书里。** 保留原图，完成后能网页翻阅，也能导出印刷PDF。
 
-## Plog：把一次出门，贴成一页
+## 新功能！
 
-[![海边、日落与星月爱心组成的Plog](docs/showcase/plog/plog.jpg)](https://strivekboy-coder.github.io/photo-book-studio/showcase/plog/)
+### Plog / 手账本模式
 
-照片、手写小字、纸条和涂鸦，把零碎的小事留在一起。只有你想做 Plog、手账或提供这种参考时才启用；普通相册继续按原流程制作。
+[![海边、日落与星月爱心组成的Plog](docs/showcase/plog/plog-masked.jpg)](https://strivekboy-coder.github.io/photo-book-studio/showcase/plog/)
+
+除了相册，Skill 新增了 Plog / 手账本模式。在此模式中，可以手动对图片、贴纸和文字进行简单编辑。只有你想做 Plog、手账或提供这种参考时才启用；普通相册继续按原流程制作。
 
 制作后的 HTML 默认带微调：移动、等比缩放、旋转照片和装饰，修改文字、字号、颜色与字体。也可以只通过对话修改，再按要求交付 PNG／JPG。PDF 只在明确要求时导出。
 
@@ -64,7 +66,12 @@ AI读懂照片，把零散瞬间串成故事。结合画面里的细节与你提
 | ![极简纸刊](docs/showcase/effects/minimal.jpg) | ![抽象记忆](docs/showcase/effects/editorial.jpg) | ![撕纸插画](docs/showcase/effects/gathered.jpg) | ![旅行明信片](docs/showcase/effects/postcard.jpg) |
 | Minimal Zine Poster | Photo Abstract Editorial | Gathered Scenes | Photo to Zine Postcard |
 
-七条创意路线都有适配说明；原有四条保留，新增信封旅行拼贴、主体突破画框和三照片纸感拼贴。新路线已做内部试稿；未经认可的试稿不作为公开效果宣传，使用时仍需对照原图检查细节。额外风格 skill 是可选增强。
+| 把片段装进信封 | 让树木走出画框 | 给照片一点纸的触感 |
+|---|---|---|
+| ![信封旅行拼贴](docs/showcase/effects/travel-envelope.jpg) | ![树木突破摄影窗口](docs/showcase/effects/frame-breakout.jpg) | ![三照片叠合纸感拼贴](docs/showcase/effects/paper-collage.jpg) |
+| Travel Envelope | Subject Breaks the Frame | Three-photo Paper Collage |
+
+七条创意路线都有适配说明；原有四条保留，新增信封旅行拼贴、主体突破画框和三照片纸感拼贴。新增示例采用重新选图与叠合后的版本，使用时仍需对照原图检查细节；旧的未获认可试稿不用于展示。额外风格 skill 是可选增强。
 
 ![慕尼黑相册：真实冲浪照片与撕纸插画](docs/showcase/munich/spread-05.jpg)
 
@@ -130,7 +137,7 @@ Plog 使用 Skill 内的 requirements-plog.txt 和 scripts/plog.py；[执行与�
 
 [灵感与素材库](skills/photo-book-studio/references/plog-library.md)记录来源和实测状态。大素材包可单独发布为 GitHub Release 附件或静态网站文件，由索引按需指向；原生 SVG 与提供者索引随 Skill 提供，较大材料按项目获取和缓存。Tatter & Tag 的邮件许可按维护者转述记录，原始素材二次托管仍需明确授权。
 
-Plog 网页默认带可选的浏览器微调：移动、等比缩放、旋转照片与装饰，修改文字，撤销与保存草稿。最终分享文件由 Codex 导出 PNG／JPG，也可汇成阅读 PDF；JSON／HTML 是继续编辑的备份。普通相册尚未加入这套自由图层编辑器。[打开 Plog 展示 ↗](https://strivekboy-coder.github.io/photo-book-studio/showcase/plog/)。展示仅使用用户认可并确认获同意的一张第一版夜间页，不发布原始照片或其他私人页面。
+Plog 网页默认带可选的浏览器微调：移动、等比缩放、旋转照片与装饰，修改文字，撤销与保存草稿。最终分享文件由 Codex 导出 PNG／JPG，也可汇成阅读 PDF；JSON／HTML 是继续编辑的备份。普通相册尚未加入这套自由图层编辑器。[打开 Plog 展示 ↗](https://strivekboy-coder.github.io/photo-book-studio/showcase/plog/)。Plog 展示使用一张已获同意的第一版夜间页，四处人脸已用贴纸遮挡；不发布原始照片或其他私人页面。
 
 当前已完成逐张试稿、浏览器操作检查与独立安装验证；不承诺不同模型对任何照片都做出相同构图或质量。私人试稿与照片不包含在 Skill 包中。
 

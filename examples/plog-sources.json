@@ -11,10 +11,10 @@
     "userReportedFriendConsent": true
   },
   "publicAssets": [
-    "plog.jpg"
+    "plog-masked.jpg"
   ],
   "sourceImageSha256": "34de69f8209740eacfaaf6f10b0e0821c3e8124d13521dbe0710975b8261abd9",
-  "artwork": "User-approved v1 night page, copied without redesign; compressed for web",
+  "artwork": "Approved v1 night page with four opaque face stickers, rendered and flattened for public display",
   "materials": [
     {
       "kind": "paper texture",
@@ -31,5 +31,13 @@
     }
   ],
   "withdrawn": "Earlier stock-photo Plog and three new imagegen trial examples rejected by user; not public. Seven routes remain available without those trial images.",
-  "rights": "Only this finished page is approved for this project showcase; imagery is excluded from code MIT license."
+  "rights": "Only this finished page is approved for this project showcase; imagery is excluded from code MIT license.",
+  "faceTreatment": {
+    "requestedByUser": true,
+    "count": 4,
+    "type": "opaque generated paper-heart seals placed as native layers over a public copy",
+    "visualInspection": "all four face regions inspected",
+    "originalsChanged": false
+  },
+  "publicImageSha256": "9a817727132fd6aab5b2fbd3ee98ed9632c241daf352c898a9f55a86f37ad33e"
 }

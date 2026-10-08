@@ -1,0 +1,40 @@
+{
+  "scope": "three approved new creative-route showcase outputs, alongside prior four effects",
+  "fictionalStory": true,
+  "rawSourcePublished": false,
+  "photographicFidelity": "Imagegen derivatives; recognizable source content, not identical original pixels",
+  "tool": "built-in imagegen",
+  "outputs": [
+    {
+      "route": "travel-envelope",
+      "file": "docs/showcase/effects/travel-envelope.jpg",
+      "sources": [
+        "photo-1588061728145-54ace02ab9cd.avif",
+        "photo-1534040385115-33dcb3acba5b.avif",
+        "photo-1622363021659-c72cbdfd1aa6.avif",
+        "premium_photo-1693879092361-7d019f52201b.avif"
+      ],
+      "review": "New park/coffee/architecture/pretzel composition, corrected relative scale and paper-overlay treatment"
+    },
+    {
+      "route": "frame-breakout",
+      "file": "docs/showcase/effects/frame-breakout.jpg",
+      "sources": [
+        "photo-1588061728145-54ace02ab9cd.avif"
+      ],
+      "review": "Tree crown crosses a straight source-photo window; white rotunda and lawn remain visible"
+    },
+    {
+      "route": "three-photo-paper-collage",
+      "file": "docs/showcase/effects/paper-collage.jpg",
+      "sources": [
+        "photo-1534040385115-33dcb3acba5b.avif",
+        "photo-1588061728145-54ace02ab9cd.avif",
+        "photo-1622363021659-c72cbdfd1aa6.avif"
+      ],
+      "review": "Central main photo, partly covered landscape/portrait support strips, one compact paper group; overall scale corrected"
+    }
+  ],
+  "sourcePermission": "Existing user-authorized Munich/couple stock showcase assets, reused for composed demonstration outputs only",
+  "rights": "Finished example images excluded from code MIT license. Earlier rejected street/colonnade/panda results remain withdrawn."
+}
