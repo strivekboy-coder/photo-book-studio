@@ -30,3 +30,8 @@ The output has MediaBox = trim plus bleed and an explicit TrimBox. Do not fit th
 `preflight.json` reports page counts, export resolution, page rotation and small physical text warnings. It always leaves printReady false until a human/agent reviews the exported pixels and the printer-specific cover proof. It does not certify source photo sharpness, safe crops or color matching by itself.
 
 Missing image-generation capabilities are not an installation failure. Use a photo or text cover unless the user wants to wait for another tool; mark generated-art limits honestly. Generate the final cover after the interior story has been reviewed, while planning its needed pixel dimensions at intake.
+
+
+## Ordinary albums and opt-in Plog
+
+New ordinary albums begin with the fixed intake questionnaire before inventory/layout/generation. Complete process and all questions: [PROCESS.md](PROCESS.md). Plog and scrapbook styling is opt-in; its produced HTML includes the optional local fine-tuning editor. Seven creative treatments are reviewed for new album/Plog sets, without a requirement to use one. Sharing images are PNG/JPG; PDF is only exported when requested. Editing backups are not final deliveries.

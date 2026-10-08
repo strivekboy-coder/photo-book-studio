@@ -1,0 +1,36 @@
+{
+  "version": "v0.7.0",
+  "reviewedAt": "2026-10-08",
+  "privatePhotosPublished": true,
+  "publicPlogSelected": 5,
+  "publicPlogPlaced": 5,
+  "publicPlogOmitted": 0,
+  "sevenCreativeRoutesBundled": true,
+  "newBookQuestionnairePreserved": true,
+  "plogOptIn": true,
+  "editorIncludedInPlogHtmlByDefault": true,
+  "ordinaryAlbumEditorAdded": false,
+  "pdfOptIn": true,
+  "generationTrials": {
+    "travel-envelope": "2 attempts, corrected oversized/grounded paper; raw skill not installed or bundled",
+    "frame-breakout": "1 attempt; contour crosses photographic window",
+    "three-photo-paper-collage": "2 attempts; whitespace improved, landscape support remains near-square"
+  },
+  "limitations": [
+    "Imagegen derivatives are not pixel-exact photographs",
+    "No universal cross-model aesthetic guarantee",
+    "Browser draft edits require a handoff before project export",
+    "Gallery is a showcase, not a hosted editing app"
+  ],
+  "browserReview": {
+    "desktop": 1280,
+    "phone": 390,
+    "errors": 0,
+    "horizontalOverflow": false,
+    "manualPixelsInspected": true
+  },
+  "publicationConsent": "User-confirmed friend consent for one approved v1 finished page only",
+  "publicPageCount": 1,
+  "newTrialsPublic": false,
+  "aestheticReview": "Previous stock/showcase trials explicitly rejected; one approved v1 retained"
+}

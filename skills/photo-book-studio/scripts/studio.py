@@ -23,6 +23,8 @@ def init(args):
  save(root/'project/brief.json',brief)
  save(root/'project/book.json',{'title':args.title,'subtitle':'','photoRoot':'assets/photos/','policy':{'allSelectedPhotosRequired':True,'allowUnusedPhotos':False},'format':{'trimWidthMm':args.width,'trimHeightMm':args.height,'bleedMm':3,'safeMarginMm':10},'cover':{'path':'assets/cover-placeholder.svg','position':'50% 50%','backColor':'#f5f0e7','integratedText':False},'spreads':[]})
  save(root/'project/inventory.json',{'photos':[]})
+ shutil.copy2(HERE/'references/zine-policy.md',root/'project/zine-review-policy.md')
+ shutil.copy2(HERE/'references/creative-prompts.md',root/'project/creative-prompts.md')
  print(f'Initialized {root}. Resolve the intake and save brief.intakeComplete before importing photos.')
 def inventory(args):
  root=Path(args.workspace).resolve();source=Path(args.photos).resolve();brief=read(root/'project/brief.json')

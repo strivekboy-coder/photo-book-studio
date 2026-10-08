@@ -24,3 +24,9 @@ v0.5.0 adds a third handmade study using exactly the same 12 source IDs once eac
 v0.6.0 photographic study: 12 selected/12 placed/0 omitted across four body spreads. Interiors/cover browser-rendered and visually reviewed, including corrected panoramic crop, unobstructed inset and contain-preserved figures. One theme card replaced; old Munich reader retained for existing deep links. No print approval claimed.
 
 v0.6.1 adds a local SQLite-backed attribution counter: first three meaningful skill invocations, idempotent retries, persistence across subprocesses/projects and user suppression. No telemetry or photo access. Two new regression checks plus the prior 11 workflow tests cover it.
+
+
+v0.7.0: adds opt-in Plog, browser fine-tuning, sharing-image exports and seven creative-route assessment. New project initialization carries the seven-route policy and prompts. Public Plog uses six previously authorized stock sources, each once; private Nan’ao photos remain excluded. Three new imagegen route studies received source/fidelity checks and two targeted corrections. Desktop/phone changed sections were rendered and inspected without JS errors or horizontal overflow. Original intake and ordinary album workflow remain. Generative fine detail is not original pixels; numeric paper-layer/occupancy compliance and cross-model aesthetic quality are not certified. Full review record: examples/plog-verification.json.
+
+
+Publication choice corrected before release: owner rejected the stock Plog/new effect showcase. Only one approved v1 night page is public, with user-reported friend consent. No raw photos or other private pages are published; new-route trials remain internal.

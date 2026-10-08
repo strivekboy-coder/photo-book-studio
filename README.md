@@ -32,7 +32,7 @@ AI读懂照片，把零散瞬间串成故事。结合画面里的细节与你提
 | [拾起日常](https://strivekboy-coder.github.io/photo-book-studio/showcase/zine-editorial/) | [把日子晒出来](https://strivekboy-coder.github.io/photo-book-studio/showcase/zine-collage/) | [把日常贴起来](https://strivekboy-coder.github.io/photo-book-studio/showcase/zine-handmade/) |
 | ![图文交织](docs/showcase/zine-editorial/spread-03.jpg) | ![密集照片组](docs/showcase/zine-collage/spread-04.jpg) | ![纸感与专属贴纸](docs/showcase/zine-handmade/spread-04.jpg) |
 
-告诉AI你喜欢的风格，同一组照片，也能换一种表达。这是三种示范，不是固定模板菜单。主题、视觉风格与创意处理分别决定：情侣、宠物、旅行都可以选择适合自己的设计。问卷、照片清单、故事文案、贴纸评估、四条创意路线、封面和审核流程仍正常运行。
+告诉AI你喜欢的风格，同一组照片，也能换一种表达。这是三种示范，不是固定模板菜单。主题、视觉风格与创意处理分别决定：情侣、宠物、旅行都可以选择适合自己的设计。问卷、照片清单、故事文案、贴纸评估、七条创意路线、封面和审核流程仍正常运行。
 
 风格与构图指引随Skill提供，不依赖作者聊天记录；额外创意Skills用于适合的资产处理，不要求每本书使用全部效果。
 
@@ -47,6 +47,16 @@ AI读懂照片，把零散瞬间串成故事。结合画面里的细节与你提
 - **相册完成，再画封面。** 根据整本的内容、色彩与情绪，用可用的image工具制作最终封面。
 - **选中的照片，都放进书里。** 保留原图，完成后能网页翻阅，也能导出印刷PDF。
 
+## Plog：把一次出门，贴成一页
+
+[![海边、日落与星月爱心组成的Plog](docs/showcase/plog/plog.jpg)](https://strivekboy-coder.github.io/photo-book-studio/showcase/plog/)
+
+照片、手写小字、纸条和涂鸦，把零碎的小事留在一起。只有你想做 Plog、手账或提供这种参考时才启用；普通相册继续按原流程制作。
+
+制作后的 HTML 默认带微调：移动、等比缩放、旋转照片和装饰，修改文字、字号、颜色与字体。也可以只通过对话修改，再按要求交付 PNG／JPG。PDF 只在明确要求时导出。
+
+**[看一张手账小记 ↗](https://strivekboy-coder.github.io/photo-book-studio/showcase/plog/)** · **[完整流程与首次问卷](docs/PROCESS.md)**
+
 ## 照片之外，再留一点感觉
 
 | 给一个哈欠留白 | 把牵手变成记忆 | 让风景走出照片 | 寄给下一次出发 |
@@ -54,11 +64,13 @@ AI读懂照片，把零散瞬间串成故事。结合画面里的细节与你提
 | ![极简纸刊](docs/showcase/effects/minimal.jpg) | ![抽象记忆](docs/showcase/effects/editorial.jpg) | ![撕纸插画](docs/showcase/effects/gathered.jpg) | ![旅行明信片](docs/showcase/effects/postcard.jpg) |
 | Minimal Zine Poster | Photo Abstract Editorial | Gathered Scenes | Photo to Zine Postcard |
 
-四种创意路线都已经用在示例里。它们按照片和故事选择，额外风格 skill 是可选增强。
+七条创意路线都有适配说明；原有四条保留，新增信封旅行拼贴、主体突破画框和三照片纸感拼贴。新路线已做内部试稿；未经认可的试稿不作为公开效果宣传，使用时仍需对照原图检查细节。额外风格 skill 是可选增强。
 
 ![慕尼黑相册：真实冲浪照片与撕纸插画](docs/showcase/munich/spread-05.jpg)
 
 ![成都英文旅行日记：熊猫原照与撕纸](docs/showcase/chengdu/spread-04.jpg)
+
+新增三条可选处理：[信封旅行拼贴](https://github.com/HwawH-J-Y/travel-envelope)、主体突破画框、三照片纸感拼贴。后两条保存用户提供的原始 prompt；信封路线提供独立适配 prompt 与来源链接，无需安装额外运行程序。全部七条先评估，再按需要选择；Plog 仍遵循照片、文字与材料的构图流程。
 
 ## 推荐一起安装的创意 Skills
 
@@ -90,6 +102,37 @@ AI读懂照片，把零散瞬间串成故事。结合画面里的细节与你提
 [![照片衍生的撕纸事件背景](docs/showcase/munich/spread-04.jpg)](https://strivekboy-coder.github.io/photo-book-studio/showcase/munich/?page=3)
 
 [![留有长文空间的故事背景写信页](docs/showcase/chengdu/spread-08.jpg)](https://strivekboy-coder.github.io/photo-book-studio/showcase/chengdu/?page=7)
+
+## 运行能力与可选插件
+
+基础照片排版、网页预览和本地导出**没有必装的第三方插件**。Python、Node.js、Pillow、Playwright 和浏览器等运行依赖见下方安装与导出说明；它们不是 Codex 插件。
+
+| 能力或插件 | 是否必需 | 用途与限制 |
+|---|---|---|
+| 可用的 image 工具 | 仅生成插画、贴纸或生成式衍生图时需要 | 没有生成工具时仍能使用真实照片、现有素材和原生线条完成排版。 |
+| Adobe | 可选 | 素材检索、抠图、照片调整与字体探索；具体工具可能需要登录，Stock 授权与费用需逐项确认。 |
+| Figma | 可选 | 用户要求接入已有 Figma 文件或支持可编辑设计流程时再评估；连接本身不保证提供 Plog 的完整编辑功能。 |
+| GitHub | 可选 | 发布或协作维护仓库；制作私人相册不需要连接 GitHub。 |
+
+插件安装、账号登录和素材授权是不同的条件。开始相关操作前检查当前可用能力，不把某位作者已连接的插件写成所有用户必须安装的依赖。若特定能力不可用，说明实际限制并保留可行的普通照片排版路线。
+
+Plog / 电子手账的构图、素材核查与审美检查见 [随 Skill 提供的说明](skills/photo-book-studio/references/plog-composition.md)。独立 Plog 使用 scripts/plog.py：保留照片身份、记录图层、检查字体缺字，并导出网页与 PNG。工具不会自动选择构图或替代审美审核。
+
+## Plog 与电子手账
+
+Plog／电子手账是 Photo Book Studio 的可选表达方式。只有你提到 Plog、手账或明确提供这种风格参考时才启用；普通相册继续走现有相册流程。也可以把上传照片制作成竖版 Plog：疏密、配色、照片形状、手写文字和材料关系由照片与参考决定，密集页面也是有效选择。
+
+安装 Skill 后，对 Codex 说：
+
+> 使用 $photo-book-studio，为这些照片做一张 Plog。先看照片与灵感库，选择适合的手写字体和材料，保留选中的照片，导出后检查画面。
+
+Plog 使用 Skill 内的 requirements-plog.txt 和 scripts/plog.py；[执行与图层说明](skills/photo-book-studio/references/plog-schema.md)提供完整入口。支持独立工作目录、照片清单、原图哈希、图层数据、字体缺字检查、指定页渲染，以及原尺寸/手机预览。基础材料为12个小型原生 SVG，较大素材和手写字体按项目取用与缓存。
+
+[灵感与素材库](skills/photo-book-studio/references/plog-library.md)记录来源和实测状态。大素材包可单独发布为 GitHub Release 附件或静态网站文件，由索引按需指向；原生 SVG 与提供者索引随 Skill 提供，较大材料按项目获取和缓存。Tatter & Tag 的邮件许可按维护者转述记录，原始素材二次托管仍需明确授权。
+
+Plog 网页默认带可选的浏览器微调：移动、等比缩放、旋转照片与装饰，修改文字，撤销与保存草稿。最终分享文件由 Codex 导出 PNG／JPG，也可汇成阅读 PDF；JSON／HTML 是继续编辑的备份。普通相册尚未加入这套自由图层编辑器。[打开 Plog 展示 ↗](https://strivekboy-coder.github.io/photo-book-studio/showcase/plog/)。展示仅使用用户认可并确认获同意的一张第一版夜间页，不发布原始照片或其他私人页面。
+
+当前已完成逐张试稿、浏览器操作检查与独立安装验证；不承诺不同模型对任何照片都做出相同构图或质量。私人试稿与照片不包含在 Skill 包中。
 
 ## 开始做你的一本
 

@@ -1,4 +1,4 @@
 interface:
   display_name: "Photo Book Studio"
-  short_description: "Build printable editorial photo books"
-  default_prompt: "Turn my selected photos into a printable photo book while keeping every selected photo."
+  short_description: "Photo books, Plogs and digital photo journals"
+  default_prompt: "Use $photo-book-studio to make a photo book from my selected photos, preserving each memory and reviewing the rendered result. Use Plog or digital scrapbook styling only when I request it."

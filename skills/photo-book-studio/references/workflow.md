@@ -20,7 +20,7 @@ Save the resolved answers to `project/brief.json` before layout begins. Read the
 8. Write or polish concise event-level copy. Preserve facts, names, jokes, and emotional meaning.
 9. Place text in rendered whitespace with readable contrast and natural line breaks.
 10. Add source-related backgrounds, overlaps, and stickers only when they improve hierarchy or story.
-11. Finish the normal layout, then review rare candidates under the four-route zine policy.
+11. Finish the normal layout, then review rare candidates under the seven-route creative policy.
 12. Store auditable source IDs, generated paths, positions, captions, and provenance in `project/book.json`.
 13. Build, render every changed spread in a browser, correct visible failures, and render again.
 14. Confirm selected equals placed and omitted equals zero before reporting completion.
@@ -36,7 +36,7 @@ Save the resolved answers to `project/brief.json` before layout begins. Read the
 
 - A new batch in an established book reuses the saved brief and cached analysis, inventories only new photos, and reviews changed plus neighboring spreads.
 - A local correction reads only the referenced pages and affected assets.
-- Do not rerun the full EXIF scan, full contact sheets, or four-route zine review for a simple text, color, crop, or sticker change.
+- Do not rerun the full EXIF scan, full contact sheets, or seven-route creative review for a simple text, color, crop, or sticker change.
 - Always rebuild once for completeness; render changed spreads only unless page structure changed.
 
 ### Fast batch path
@@ -45,7 +45,7 @@ When the saved brief is stable and a clear new batch contains roughly forty phot
 
 1. Inventory and contact-sheet only the new files.
 2. Reuse approved page families and inspect full resolution only for hero, crop-risk, ambiguous, or low-quality images.
-3. Assess all four zine routes and event-linked stickers once. Generate only strong candidates or requested assets; log a concise reason when none is suitable.
+3. Assess all seven creative routes and event-linked stickers once. Generate only strong candidates or requested assets; log a concise reason when none is suitable.
 4. Apply the entire batch before building.
 5. Build once and render the changed spreads together in one browser session where possible.
 6. Correct only failures visible in the render, then run the final selected/placed/omitted checks. Defer full print-DPI preflight until the layout is stable or print export is requested.

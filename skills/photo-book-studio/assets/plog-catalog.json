@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "bundled": {
+    "folder": "assets/plog-starter",
+    "count": 12,
+    "kind": "original native SVG utilities",
+    "bytes": 5197,
+    "license": "repository MIT"
+  },
+  "fonts": [
+    {
+      "id": "yozai",
+      "role": "handwritten notes",
+      "authorRelease": "https://github.com/lxgw/yozai-font/releases/download/v0.868/Yozai-Medium.ttf",
+      "license": "OFL-1.1",
+      "fetch": "scripts/plog.py font --name yozai"
+    },
+    {
+      "id": "xiaolai",
+      "role": "rounded handwriting emphasis",
+      "authorRelease": "https://github.com/lxgw/kose-font/releases/download/v3.126/Xiaolai-Regular.ttf",
+      "license": "OFL-1.1",
+      "fetch": "scripts/plog.py font --name xiaolai"
+    }
+  ],
+  "providers": [
+    {
+      "id": "tatter-tag",
+      "url": "https://www.tatterandtag.com/collections/travel/",
+      "publicTerms": "https://www.tatterandtag.com/use-and-credits/",
+      "formats": [
+        "PDF"
+      ],
+      "permission": {
+        "status": "user-reported emailed consent",
+        "reportedScope": "encouraged use by this skill for publicity",
+        "rawRedistribution": "not established"
+      },
+      "method": "Use original page/current sheet link and retain provenance; no raw-file rehosting without express redistribution permission."
+    },
+    {
+      "id": "printable-pretty",
+      "url": "https://printablepretty.com/product-category/free-digital-downloads/junk-journal/",
+      "terms": "https://printablepretty.com/terms-of-use/",
+      "formats": [
+        "JPG",
+        "PDF",
+        "ZIP"
+      ],
+      "method": "Current product page button; refresh tokenized download links",
+      "rawRedistribution": false
+    },
+    {
+      "id": "ambientcg",
+      "url": "https://ambientcg.com/view?id=Paper001",
+      "license": "CC0",
+      "method": "Official material pack Color map"
+    }
+  ],
+  "optionalRasterPack": {
+    "name": "plog-paper-materials-v1.zip",
+    "count": 16,
+    "status": "prepared locally; not hosted/published",
+    "method": "Optional ZIP import with verified hash; no dependency on author's private folder",
+    "sha256": "d4c9741d898f037be98d1814c9107cea5c7033bf7b3968acc06050cfc992f525",
+    "bytes": 2915095
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "example": "plog",
+  "publicPageCount": 1,
+  "sourcePhotoCount": 5,
+  "sourcePhotosInPage": 5,
+  "rawSourcePublished": false,
+  "otherPrivatePagesPublished": false,
+  "consent": {
+    "source": "explicit user instruction in this conversation",
+    "scope": "one previously approved finished Plog night page",
+    "userReportedFriendConsent": true
+  },
+  "publicAssets": [
+    "plog.jpg"
+  ],
+  "sourceImageSha256": "34de69f8209740eacfaaf6f10b0e0821c3e8124d13521dbe0710975b8261abd9",
+  "artwork": "User-approved v1 night page, copied without redesign; compressed for web",
+  "materials": [
+    {
+      "kind": "paper texture",
+      "source": "https://ambientcg.com/view?id=Paper001",
+      "licenseAsRecorded": "CC0"
+    },
+    {
+      "kind": "watercolor heart",
+      "source": "reused older project-generated imagegen material according to asset registry"
+    },
+    {
+      "kind": "moon, stars, arrows",
+      "source": "original SVG/CSS v1 design"
+    }
+  ],
+  "withdrawn": "Earlier stock-photo Plog and three new imagegen trial examples rejected by user; not public. Seven routes remain available without those trial images.",
+  "rights": "Only this finished page is approved for this project showcase; imagery is excluded from code MIT license."
+}

@@ -30,7 +30,7 @@ Compose the event before the template. Identify the focal photograph or phrase, 
 
 Build a tactile language from the story: warm or cool paper, layered photographs, gentle offsets, selected fibrous edges, handwritten observations and source-linked ornaments. Use a few recurring material cues for continuity rather than applying tape/shadows to every photograph. Contrast a large sincere image with smaller collected fragments; leave paper visible between clusters. Borders and underprints should connect content or imply a memory insert, not hide faces or shrink every image.
 
-Readable handwriting can carry personal remarks; dates and supporting facts may use quiet sans/serif type. Stickers should touch or relate to a group, phrase or margin rhythm. Match cat/coffee/wave/transport motifs to their actual event. CSS masks are non-destructive and require subject-safe edge review. A paper effect does not require a generated derivative; use the four creative routes independently when a strong candidate warrants one.
+Readable handwriting can carry personal remarks; dates and supporting facts may use quiet sans/serif type. Stickers should touch or relate to a group, phrase or margin rhythm. Match cat/coffee/wave/transport motifs to their actual event. CSS masks are non-destructive and require subject-safe edge review. A paper effect does not require a generated derivative; use the seven creative routes independently when a strong candidate warrants one.
 
 ## Spatial and decorative operations
 

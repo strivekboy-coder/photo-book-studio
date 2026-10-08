@@ -1,44 +1,41 @@
-# Four optional creative transformations
+# Seven optional creative treatments
 
-Run this review after every new photo batch has been placed and visually checked, whatever the book theme or visual direction. These four asset treatments do not define ordinary zine layout and are not restricted to zine books. Assess all four; permission, suitability and available tools determine which are used.
+Assess these seven routes after normal photo placement and the initial browser review of a new album batch or substantial redesign. They are also available for an explicitly requested Plog/手账. In Plog, use them as an insert, decorative source-derived asset, or an explicitly requested alternative composition; the ordinary photo/handwriting/material workflow remains primary. Local wording/crop corrections do not trigger a new full review.
 
-## Non-negotiable content rule
+## Intake and content rules
 
-Every photo manually selected by the user remains intentional content. Generated artwork never silently removes or ranks out a selection. Only when the current user explicitly authorizes replacement in their own brief, keep the original `file` in `book.json`, set the generated image as its `path`, and record the relationship so chronology and placement audits still include the selection. Other generated routes remain additions unless separately authorized.
+The first visible production step for a new ordinary album is the fixed questionnaire in `intake-questionnaire.md`. Complete it and persist the answers before ingesting or composing. Only a standalone Plog uses its smaller intake. Respect saved permissions for art derivatives, torn edges, simplification and generated decoration. A seven-route review does not grant new permissions.
 
-## Four conversion routes
+Every selected photo remains intentional. Do not inherit another skill's duplicate omission or automatic destination-object rules. Extra artwork is decorative by default, with source relationships recorded. A replacement requires explicit approval and retains its original source file ID. A generated collage containing three source photos is not automatically three auditable photo placements: retain the originals in the normal layout or build the collage with truthful individual photo layers. Never hide missing photos behind a generation result.
 
-1. **Minimal zine poster**
-   - Use for covers, chapter openers, pauses, and text-led pages.
-   - Best when one object, phrase, route, or relationship can carry the idea without a photograph.
-   - Keep 70–85% quiet space and one structural accent color.
+## The seven routes
 
-2. **Photo abstract editorial**
-   - Use for a strong single photograph with clear geometry, distance, repetition, or negative space.
-   - Preserve the photograph faithfully and build a separate abstract memory panel from facts visible in that photo.
-   - Limit to rare emphasis pages; do not turn ordinary multi-photo pages into editorial diptychs.
+| Route | Useful situation | Required visual relationship / rejection check |
+|---|---|---|
+| 1. Minimal Zine Poster | Cover, chapter pause, a source-linked phrase or single motif | A quiet field and one structural accent; no unrelated invented story. Its minimalism is specific to this route, not the whole book. |
+| 2. Photo Abstract Editorial | A single strong photo with geometry, distance or repetition | Keep a faithful photo beside a separate source-derived memory panel. Reject a repainted source or an unrelated abstract panel. |
+| 3. Gathered Scenes | People and environment jointly carry a memory | Integrate a truthful photo anchor with source-derived illustration through an irregular fibrous tear. Reject two complete pictures merely stacked. |
+| 4. Photo to Zine Postcard | A day, meal, place, object or chapter insert | Preserve the photo; add a source-specific small motif and useful card/back structure. Its native postcard ratio does not dictate album dimensions. |
+| 5. Travel Envelope | A scenic source and distinct travel moments fit a pocket/correspondence idea | Recognizable source scenery around a thin paper envelope; asymmetrical overlapping photo/cutout contents disappear behind the front pocket. Avoid an opaque oversized box, invented souvenirs, repeated sources or an envelope physically standing on photographed pavement. |
+| 6. Subject Breaks the Frame | A recognizable contour can cross a photographic window | Clean warm-white canvas, straight rectangular photo window containing real source context, and a truthful source subject on a higher layer crossing the edge. Reject a mere border, invented anatomy/branches, duplicate subjects, repainted illustration or floating-card shadow. |
+| 7. Three-photo Paper Collage | Three related photos benefit from a quiet layered keepsake cluster | Portrait 3:4, one central main photograph, one landscape and one portrait support, about 45% collage occupancy, warm-white breathing room; 10–15 thin paper/vellum/notebook/envelope/color layers. Derive colors from photos, avoid automatic black tape, and add no text/logos/watermarks. Reject filler flowers/objects, three similar portrait cards or materials that consume all whitespace. |
 
-3. **Gathered Scenes**
-   - Use when people and environment jointly tell the memory: touch, movement, weather, distance, a recognizable place, or a recurring object.
-   - Preserve truthful photographic material as the anchor, then extend one source-derived shape or color across a torn-paper boundary.
-   - It can improve an ordinary image, but it is not primarily a bad-photo repair tool.
+Routes 5–7 have self-contained guidance and the two user-supplied prompts in `creative-prompts.md`. Route 5 is an independently written adaptation informed by the credited travel-envelope repository; it does not require installing that skill. The other specialized skills remain optional asset tools. Follow the active image tool's schema and inspect local input images before generation.
 
-4. **Photo to Zine Postcard**
-   - Use for a self-contained day, location, meal, object, ticket-like memory, or event that can become a small printed card.
-   - Preserve the source photo and use the postcard result as a page insert, ticket, chapter card, or decorative print.
-   - Its native 2:3 front/back format should not control the book's square page system.
+## Source suitability before generation
 
-## Selection threshold
+Compare source candidates for the intended relationship: light, calm/busy regions, palette compatibility, contour quality, spatial layers and the prospective photographic hierarchy. Being technically extractable is not enough to make a strong showcase. Trees, branches, landscapes and buildings often make a subtle frame breakout; an animal or face is not prohibited, but do not choose one merely because it is an obvious cutout. An unsuitable treatment candidate remains in the normal album; never discard a selected memory for aesthetic weakness.
 
-- First finish the normal photo layout.
-- Review every placed page, but convert only unusually strong candidates.
-- Prefer 0–2 generated pieces per new batch and keep generated pieces below roughly 10% of total page content.
-- Favor recurring personal symbols over generic decoration: the scooter, a specific flower, a room, a route, snow, a carousel, or another object already present in the story.
-- Do not generate merely because a page has empty space.
+For the reference-led three-photo paper route, compose one compact overlapped unit: a clear main photo in front, a landscape and a portrait support partly visible behind, and paper layers binding the same group. Do not treat all three photos as equal independent cards or put them in separate columns. The main photo can remain rectangular; subject extraction is an optional reference-led variation, not a requirement for all collages. Calmer paper, subdued support photos and fewer competing edges may better match the user's reference. Assess the whole silhouette and breathing room before accepting.
 
-## Final audit
+## Choosing, generating and reviewing
 
-- Confirm all selected originals are still placed exactly once.
-- Mark additional decorative derivatives with `decorative: true` and a source relationship. An approved replacement must keep the selected source file ID and must not be marked decorative, so the placement audit still counts it.
-- Check faces, text spelling, chronology, crop safety, and print resolution.
-- Render every modified spread and reject conversions that weaken the original photograph or make the book feel like a collection of unrelated effects.
+Record a compact `creativeReview`: each route's use/skip/candidate decision and the reason tied to this event, permission and available assets/tools. Review all seven; using zero is valid. For an ordinary batch, zero to two strong treatments is a useful starting point, not a quota. Explicitly requested studies or a whole-page style may use more. Do not mechanically impose a content percentage on a requested Plog composition, nor use all seven for variety.
+
+Preserve an approved composition and its useful accents during revisions. A correction can rebuild composition when that solves the actual problem; it is not a mandatory fresh-start step every time. Evaluate the result against its source, layout intent and normal viewing size. More pages, more materials, more tool calls or greater sparsity do not prove better design.
+
+Generated photographic derivatives can alter details even when the prompt asks for fidelity. Compare faces, gestures, architecture, foliage and meaningful source text. If unchanged original pixels are required, use faithful photo layers and masks; do not promise imagegen is pixel-exact. Keep the source files read-only and do not invent missing anatomy or scenery. If a specific cutout cannot be extracted faithfully with available tools, retain a framed photo or skip that route.
+
+For imagegen, save the actual tool, prompt, selected source map and output; inspect before accepting. One focused correction is generally enough to test a candidate. Disclose remaining deviations instead of retrying indefinitely or certifying every numeric ratio by eye. External references are inspiration, not an asset reuse license.
+
+Finish by rendering every changed page, checking identity/occurrence counts and reviewing actual pixels. A generated material may be reused only after alpha, crop and source/provenance checks. PDF output remains opt-in.
