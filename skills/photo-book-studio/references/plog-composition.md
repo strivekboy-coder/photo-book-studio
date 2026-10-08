@@ -103,11 +103,11 @@ Ask:
 - Does each caption refer to its nearby photo without crossing a subject or frame awkwardly?
 - Are masks truthful, margins safe and small images still meaningful?
 
-A first three-canvas coastal trial established feasible scene-background, dark snapshot and paper-strip compositions. It does not prove expert-level aesthetic quality or independent-agent reproducibility. Its weaknesses were busy foliage behind a title, similar portrait scales in the night cluster, mixed watercolor/line decoration, and food-page supporting images that became too small. Retain these as review criteria rather than freezing the trial's colors, font or coordinates as a template.
+A first three-canvas coastal trial established feasible scene-background, dark snapshot and paper-strip compositions. It does not prove expert-level aesthetic quality or independent-agent reproducibility. Early author review proposed checking busy title backgrounds, portrait scale relationships and small food details. The user subsequently preferred the original night page and explicitly approved its bright watercolor heart with cream line doodles. Do not treat mixed materials or similar portrait scales as automatic defects, mute the approved accent, or let an early candidate critique override later user approval. Assess the rendered relationships in context; retain successful choices without freezing that palette or geometry as a universal template.
 
 No private source photographs or trial outputs ship with this reference.
 
-Three later sequential one-page studies checked the ordinary workflow through the portable Plog tool on night, food and unrelated stock-city content. They confirmed that whole-decoration containment and visible-writing-region checks prevent practical failures while expressive accents and dense photo groups remain. This supports a human-review candidate, not a fixed palette/template or proof of identical quality from every model.
+Three later sequential one-page studies checked the ordinary workflow through the portable Plog tool on night, food and unrelated stock-city content. They confirmed that whole-decoration containment and visible-writing-region checks prevent practical failures while expressive accents and dense photo groups remain. Those checks verify practical rendering relationships; the user later judged the stock-city demonstration weaker than the approved first version. They do not establish aesthetic improvement or identical quality from every model. Preserve recorded user-approved versions and assess actual results rather than counting trials, pages or new materials.
 
 ## Seven creative treatments inside Plog
 

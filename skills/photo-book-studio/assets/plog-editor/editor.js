@@ -138,7 +138,9 @@
   panel.querySelectorAll('[data-prop]').forEach(input=>{
     input.onfocus=()=>beforeInput=clone(book);
     input.oninput=()=>{
-      if(!selected)return;const o=layer(),k=input.dataset.prop;
+      if(!selected)return;
+      if(!beforeInput)beforeInput=clone(book);
+      const o=layer(),k=input.dataset.prop;
       if(input.type==='number'){
         const n=Number(input.value);if(!input.value||!Number.isFinite(n)||(['w','h'].includes(k)&&n<24)||(k==='size'&&(n<8||n>300)))return;
         if(['w','h'].includes(k)&&['photo','image'].includes(o.type)){const b=o.border||0,s=n/o[k];if(o.w*s<2*b+24||o.h*s<2*b+(o.matBottom||0)+24)return;}
