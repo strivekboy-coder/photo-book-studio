@@ -4,7 +4,7 @@ Read when the user requests Plog, a digital scrapbook, a single-page travel jour
 
 ## Scope and persistence
 
-Resolve only missing requirements that materially affect this prototype: output ratio, supplied story/copy, selected photographs and permitted treatments. Record explicit/inferred/unknown preferences in the workspace brief before arranging. A standalone collage trial is not a new printed book and does not need the full print questionnaire. If the request becomes a new book, run its normal intake once.
+Use the lightweight intake in intake-questionnaire.md: an optional invitation for style/reference/copy/stickers, with supplied facts and safe defaults sufficient for a first design. Do not interrogate every missing field; ask only what materially blocks this prototype. Record explicit/inferred/unknown preferences in the workspace brief before arranging. A standalone collage trial is not a new printed book and does not need the full print questionnaire. If the request becomes a new book, run its normal intake once.
 
 Preserve all selected photographs across the main page set; use each once unless the user authorizes repeats or alternatives. A source photograph used as a background counts as a placement and must remain recognizably meaningful, not almost entirely hidden. Keep variants separately identified. Record source IDs, safe crops, positions, masks, captions and asset provenance. If EXIF is absent, preserve known order or group by visible scene without inventing a dated itinerary.
 

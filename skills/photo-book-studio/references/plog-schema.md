@@ -4,7 +4,7 @@ Read for Plog / digital scrapbook authoring. It is separate from printed spreads
 
 ## Resolve and analyze
 
-Read the saved brief for revisions. For a new standalone Plog, resolve missing story/location, output ratio, visual references, copy source, selection and treatment permissions. Save each value as explicit/inferred/unknown and set intakeComplete when resolved. Do not ask for a printer or run the printed-book questionnaire for a social collage.
+Read the saved brief for revisions. For a new standalone Plog, use the opt-in routing and optional preference invitation in intake-questionnaire.md. Do not require separate answers for location, ratio, style, copy, stickers or cover merely to show a first design. User-supplied information takes priority; otherwise default to 3:4 sharing pages, all selected photos once, short honest draft notes, intact originals, useful source-linked decoration and HTML fine-tuning. Unknown factual details stay unknown. Ask only a missing photo or a materially blocking ambiguity. Record each explicit/inferred/unknown value and safe treatment assumptions before importing; then set intakeComplete because the design brief is sufficient, even when no questionnaire was answered. No PDF or publication by default; artistic replacement still requires explicit authorization.
 
 Inventory all user-selected uploads. Inspect the contact sheet and full-size hero/crop-risk images. Group by event before allocating canvases. Dense pages are valid; source preservation, readability and reference fit determine whether to add a page. Review relevant concrete examples and available paper/sticker/font material before composition. Optional generated art and the seven creative routes are decisions, not quotas.
 

@@ -2,7 +2,11 @@
 
 这是制作照片相册与可选 Plog／电子手账的 Codex skill。普通相册仍是默认路线；不是上传旅行照片就自动启用手账。用户明确要求 Plog、手账或提供这种风格参考时才启用。主题、视觉风格与成品用途分别记录：印刷相册里的手账风仍遵守相册与印刷流程。
 
-## 普通相册：第一步就是问卷
+## 入口：只在用途不明确时问“相册还是 Plog／手账？”
+
+已明确说要做哪一种就直接分流，不重复问。选择 Plog 后，不需要回答后面的相册问卷。
+
+## 普通相册：先回答相册问卷
 
 新相册在导入、编排、生成之前，先使用 [完整固定问卷](../skills/photo-book-studio/references/intake-questionnaire.md)。用户已经回答的题不重复问，创意处理的许可分别询问。问卷共15题及可跳过的6b：故事与对象、成品、版型、选图、上传方式、页面节奏、预算/页数、视觉风格、文案来源、文字语气与语言、基础修图、贴纸、封面、撕纸、艺术衍生、照片简化。回答可简写，也可接受推荐项。
 
@@ -21,7 +25,7 @@
 
 ## Plog／电子手账：保留已打磨的制作方式
 
-用户明确要求后，先补齐少量必要信息：故事/地点、照片范围、比例与用途、文案、风格参考和处理许可；不套整个印刷问卷。把答案保存在项目中，再读图、分组。
+用户明确要求后，只给一条可跳过的提示：“有喜欢的风格、参考图、想写的文字或指定贴纸，可以一起发；没有偏好也可以让我根据照片设计。”如果已经上传照片并要求先看效果，就直接做，不等另一套问卷。默认竖版3:4、保留所有选图、少量真实草稿文案、原图不覆盖和有用的装饰；未知事实不猜，不默认替换原照、公开或导出 PDF。照片多时安排能容纳全部选图的页面组。只有缺照片或重要歧义阻碍制作时才补问；开始前仍保存明确偏好及推断默认值。
 
 查阅灵感、材料和字体库，提炼构图关系。先确立照片、手写小字、疏密与材料的组织方式；根据照片里的物件、动作和趣味写 SVG 涂鸦，需要水彩、纸感或专门插画时才使用 imagegen。已有好素材继续复用，记录生成/复用/跳过的理由。灵感库与小型素材库继续积累，不承诺任何素材站始终可访问。
 
@@ -56,13 +60,34 @@ JPG／PNG 是分享成品，JSON／HTML 是次要的编辑备份。浏览器草�
 
 ---
 
-# 附录：完整首次问卷
+# 附录：完整入口与首次问卷
 
 # Fixed first-use questionnaire
 
-Use this questionnaire once when a user starts a new photo book. Ask it in the user's language and preserve the numbered choices. Infer answers the user has already supplied and omit only those answered items. Do not merge the creative-permission questions into one long question.
+Route an unclear request with the single mode question below; do not ask it again when the user already named a mode. Use the numbered album questionnaire once for a new ordinary photo book. Standalone Plog uses the optional one-message preference prompt and safe defaults, not the numbered album questions. Ask it in the user's language and preserve the numbered choices. Infer answers the user has already supplied and omit only those answered items. Do not merge the creative-permission questions into one long question.
 
 Tell the user they may reply with compact choices such as `1. ... 2C 3E`, write `由你推荐` / `recommend`, or accept every recommended option.
+
+## 先选制作模式（只在请求不明确时询问）
+
+**你想做相册，还是 Plog／手账？**
+
+- A. 相册：继续下面的相册问卷。
+- B. Plog／手账：**后面的相册问卷不用回答**，直接进入轻量设计流程。
+
+用户已经明确说要做相册或 Plog 时，不重复问这题。只说“帮我整理这些照片”且用途不明确时，先单独问模式，不要同时抛出整个相册问卷。手账风的印刷相册仍走相册路线；只有明确涉及实体成册时再补相关输出问题。
+
+## Plog：一条可跳过的偏好提示
+
+> 有喜欢的风格、参考图、想写的文字或指定贴纸，可以一起发给我；没有偏好，也可以直接让我根据照片设计。
+
+这不是另一套必填问卷。已有照片，用户明确要看效果、让 AI 设计或已经给了参考时，直接使用已有信息与安全默认项开始；不要求回答这条提示后才制作。缺少照片时只请求照片；只有一个未解决事项会实质影响结果时才补问该事项。
+
+默认做竖版3:4分享页，保留所有选图各一次，照片多时安排能清楚容纳它们的页面组，不因“试效果”偷偷遗漏。文案只根据已知信息与可见内容写少量草稿，未知地点、日期、关系不猜。普通裁切/图层排版和与故事相关的装饰按请求设计，原图只读；不默认重画人物、替换原照、公开作品或导出 PDF。默认提供分享图片与带微调的 HTML，明确只要图片时遵循用户选择。既有明确偏好优先于这些默认项。
+
+开始前仍要把明确偏好与推断默认项保存到 brief 并标注来源；`intakeComplete` 表示这次制作所需信息已经可用，不表示用户填写了整套相册问卷。之后仍执行读图、灵感/字体/材料选择、构图、七条创意评估、渲染审核和照片完整性检查。
+
+## 相册问卷（仅选择相册后使用）
 
 ## 一、相册基本信息
 

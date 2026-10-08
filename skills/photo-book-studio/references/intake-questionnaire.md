@@ -1,8 +1,29 @@
 # Fixed first-use questionnaire
 
-Use this questionnaire once when a user starts a new photo book. Ask it in the user's language and preserve the numbered choices. Infer answers the user has already supplied and omit only those answered items. Do not merge the creative-permission questions into one long question.
+Route an unclear request with the single mode question below; do not ask it again when the user already named a mode. Use the numbered album questionnaire once for a new ordinary photo book. Standalone Plog uses the optional one-message preference prompt and safe defaults, not the numbered album questions. Ask it in the user's language and preserve the numbered choices. Infer answers the user has already supplied and omit only those answered items. Do not merge the creative-permission questions into one long question.
 
 Tell the user they may reply with compact choices such as `1. ... 2C 3E`, write `由你推荐` / `recommend`, or accept every recommended option.
+
+## 先选制作模式（只在请求不明确时询问）
+
+**你想做相册，还是 Plog／手账？**
+
+- A. 相册：继续下面的相册问卷。
+- B. Plog／手账：**后面的相册问卷不用回答**，直接进入轻量设计流程。
+
+用户已经明确说要做相册或 Plog 时，不重复问这题。只说“帮我整理这些照片”且用途不明确时，先单独问模式，不要同时抛出整个相册问卷。手账风的印刷相册仍走相册路线；只有明确涉及实体成册时再补相关输出问题。
+
+## Plog：一条可跳过的偏好提示
+
+> 有喜欢的风格、参考图、想写的文字或指定贴纸，可以一起发给我；没有偏好，也可以直接让我根据照片设计。
+
+这不是另一套必填问卷。已有照片，用户明确要看效果、让 AI 设计或已经给了参考时，直接使用已有信息与安全默认项开始；不要求回答这条提示后才制作。缺少照片时只请求照片；只有一个未解决事项会实质影响结果时才补问该事项。
+
+默认做竖版3:4分享页，保留所有选图各一次，照片多时安排能清楚容纳它们的页面组，不因“试效果”偷偷遗漏。文案只根据已知信息与可见内容写少量草稿，未知地点、日期、关系不猜。普通裁切/图层排版和与故事相关的装饰按请求设计，原图只读；不默认重画人物、替换原照、公开作品或导出 PDF。默认提供分享图片与带微调的 HTML，明确只要图片时遵循用户选择。既有明确偏好优先于这些默认项。
+
+开始前仍要把明确偏好与推断默认项保存到 brief 并标注来源；`intakeComplete` 表示这次制作所需信息已经可用，不表示用户填写了整套相册问卷。之后仍执行读图、灵感/字体/材料选择、构图、七条创意评估、渲染审核和照片完整性检查。
+
+## 相册问卷（仅选择相册后使用）
 
 ## 一、相册基本信息
 

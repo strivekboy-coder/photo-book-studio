@@ -1,6 +1,6 @@
 # Photo book workspace
 
-For creating or editing a book, use photo-book-studio. Read project/brief.json before each batch or revision; run the fixed intake only for a new book or explicit redesign. Initialize without importing photos, resolve the intake, then inventory.
+For creating or editing a book, use photo-book-studio. For an unclear new request, ask only album vs Plog first; an explicit Plog request skips the album questionnaire and uses an optional preference invitation plus safe defaults. Read project/brief.json before each batch or revision; run the fixed intake only for a new book or explicit redesign. Initialize without importing photos, resolve the intake, then inventory.
 
 Preserve every selected source photo with its ID and authorized occurrence count. Originals are read-only. Generated art is additional unless the current user explicitly permits replacement. Never inherit permission from an example book.
 
