@@ -71,7 +71,7 @@ AI读懂照片，把零散瞬间串成故事。结合画面里的细节与你提
 | ![信封旅行拼贴](docs/showcase/effects/travel-envelope.jpg) | ![树木突破摄影窗口](docs/showcase/effects/frame-breakout.jpg) | ![三照片叠合纸感拼贴](docs/showcase/effects/paper-collage.jpg) |
 | Travel Envelope | Subject Breaks the Frame | Three-photo Paper Collage |
 
-七条创意路线都有适配说明；原有四条保留，新增信封旅行拼贴、主体突破画框和三照片纸感拼贴。新增示例采用重新选图与叠合后的版本，使用时仍需对照原图检查细节；旧的未获认可试稿不用于展示。额外风格 skill 是可选增强。
+七条创意路线都有适配说明；统一评估七条：极简 Zine、照片抽象记忆、Gathered Scenes、照片明信片、信封旅行拼贴、主体突破画框和三照片纸感拼贴。新增示例采用重新选图与叠合后的版本，使用时仍需对照原图检查细节；旧的未获认可试稿不用于展示。额外风格 skill 是可选增强。
 
 ![慕尼黑相册：真实冲浪照片与撕纸插画](docs/showcase/munich/spread-05.jpg)
 
@@ -221,3 +221,6 @@ python /your/book/scripts/export_pdf.py --workspace /your/book
 ## 首次使用署名
 
 前三次实际调用Skill时，会在对话中简短显示作者名字与项目链接。本机用户计数跨项目和升级保留；不写入相册、不添加水印、不自动打开网页或点赞。用户可明确要求停止。计数仅保存在本机，不上传使用数据；可用 PHOTO_BOOK_STUDIO_STATE_DIR 指定位置。
+
+
+Plog 页数先按照片主次、故事关系、文案量和手机辨识度决定，详见 [规划标准](skills/photo-book-studio/references/plog-planning.md)。v0.7.3 新增交付检查 `plog.py check`，完整安装包为 [photo-book-studio-v0.7.3.zip](https://github.com/strivekboy-coder/photo-book-studio/releases/download/v0.7.3/photo-book-studio-v0.7.3.zip)，包含默认微调编辑器。

@@ -25,3 +25,5 @@ Separate story/subject, visual direction and optional treatments. Do not assign 
 For photo-led references with panoramas, floating insets, detail columns or independent text pockets, use the installed skill references/photographic-layouts.md. Extract relationships rather than tutorial arrows/template copy. Verify crop suitability and inset/gutter obstruction; choose another layout when source geometry cannot support it.
 
 When invoking photo-book-studio, follow its first-use author-credit rule and bundled scripts/credit.py once per meaningful user request. The local per-user counter is shared across projects/upgrades, capped at three displays and honors suppression. Keep attribution in the conversation, never inside the album or as a watermark. Do not count tools, tests or installation as uses.
+
+For standalone Plog, read the installed skill references/plog-planning.md, group by story and legibility before selecting page count, assess all seven creative routes, record resource and SVG/generation decisions, and use the default editor. Finish with plog.py check after final-size/phone inspection.

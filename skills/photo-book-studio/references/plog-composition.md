@@ -20,6 +20,8 @@ Maintain distinct records for inspiration cases, usable material assets and font
 
 ## Compose before decorating
 
+First read [page allocation and completion evidence](plog-planning.md). Persist source roles, groups and the density decision before selecting canvases. For mixed everyday sources, test a compact grouping before splitting fragments into separate pages. A sparse design remains valid when justified by the user/reference, independent stories, substantial copy or rendered legibility; more pages are not a quality target.
+
 1. Choose a focal memory and a readable eye path. A quiet full-scene background, a paper strip or a two-sided cluster may organize the page.
 2. Establish a readable hierarchy among photographs, phrases and decoration clusters. A dense Plog can use many small photos; it need not have one oversized hero. Scale by narrative role and check that intentional subjects remain recognizable at the intended viewing size.
 3. Use controlled irregularity around a few shared edges or a center of gravity. Rotation alone does not turn a card grid into sophisticated collage.

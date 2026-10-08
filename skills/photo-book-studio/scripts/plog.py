@@ -5,6 +5,7 @@ from pathlib import Path
 from collections import Counter
 import argparse,json,shutil,hashlib,html,re,sys,urllib.request,urllib.parse,zipfile,io
 import studio
+import plog_review
 HERE=Path(__file__).resolve().parents[1]
 FONT_SOURCES={
  "yozai":{"url":"https://github.com/lxgw/yozai-font/releases/download/v0.868/Yozai-Medium.ttf","license":"https://raw.githubusercontent.com/lxgw/yozai-font/master/OFL.txt"},
@@ -40,8 +41,10 @@ def init(args):
  save(root/'project/inventory.json',{'photos':[],'selected':0})
  shutil.copy2(HERE/'references/zine-policy.md',root/'project/zine-review-policy.md')
  shutil.copy2(HERE/'references/creative-prompts.md',root/'project/creative-prompts.md')
+ shutil.copy2(HERE/'references/plog-planning.md',root/'project/plog-planning.md')
+ save(root/'project/plog-review.json',plog_review.template())
  save(root/'project/book.json',{'kind':'plog','title':args.title,'photoRoot':'assets/photos/','format':{'widthPx':1200,'heightPx':1600},'fonts':{'default':'assets/fonts/LXGWWenKaiLite-Regular.ttf'},'policy':{'allSelectedPhotosRequired':True,'authorizedOccurrences':{}},'pages':[]})
- (root/'AGENTS.md').write_text("# Standalone Plog workspace\n\nRead project/brief.json before acting. Use supplied preferences and safe defaults for a first Plog design; invite optional style/reference/copy/stickers, but ask only a missing item that materially blocks the design. Do not require an album questionnaire or answers to every field. Save explicit/inferred/unknown values and set intakeComplete before inventory. This is not a printed book questionnaire. Keep originals read-only and every selected source once unless repeats are authorized. Record all layers in project/book.json. Use reference/material/font research before composing. Dense layouts are allowed; faces, hands, essential subjects and copy must remain readable. Mark decoration separately. Build sample.html, render every changed canvas in a real browser and inspect pixels; automated counts do not certify aesthetics. Do not publish private photographs without explicit authorization.\n",encoding='utf-8')
+ (root/'AGENTS.md').write_text("# Standalone Plog workspace\n\nRead project/brief.json before acting. Use supplied preferences and safe defaults for a first Plog design; invite optional style/reference/copy/stickers, but ask only a missing item that materially blocks the design. Do not require an album questionnaire or answers to every field. Save explicit/inferred/unknown values and set intakeComplete before inventory. This is not a printed book questionnaire. Keep originals read-only and every selected source once unless repeats are authorized. Record all layers in project/book.json. Read project/plog-planning.md before allocating canvases. Consult reference/material/font resources and save real decisions in project/plog-review.json; assess all seven creative routes in project/zine-review-policy.md. Native SVG decoration is valid. Use the bundled layer renderer and default editor. After final-size and phone pixel inspection, run plog.py check before claiming completion. Dense layouts are allowed; faces, hands, essential subjects and copy must remain readable. Mark decoration separately. Build sample.html, render every changed canvas in a real browser and inspect pixels; automated counts do not certify aesthetics. Do not publish private photographs without explicit authorization.\n",encoding='utf-8')
  print(f"Initialized {root}. Resolve and save the Plog brief before importing photos.")
 def inventory(args):
  root=Path(args.workspace).resolve()
@@ -226,6 +229,13 @@ def render(args):
   finally:
    for image in images:image.close()
  save(root/'project/render-report.json',{'pages':reports,'deliverables':deliveries,'pdfPurpose':'reading, not print preflight' if getattr(args,'pdf',False) else None,'phonePreviews':True,'notAestheticApproval':True,'bookSha256':audit['bookSha256']});print(f"Rendered {len(selected)} page(s); inspect full and phone PNGs before approval.")
+def check(args):
+ root=Path(args.workspace).resolve()
+ audit=build(args)
+ result=plog_review.check(root,audit)
+ save(root/'project/completion-check.json',{**result,'bookSha256':audit['bookSha256']})
+ print(json.dumps(result))
+
 def main():
  p=argparse.ArgumentParser(description=__doc__);sub=p.add_subparsers(dest='command',required=True)
  q=sub.add_parser('init');q.add_argument('workspace');q.add_argument('--title',default='Plog');q.set_defaults(func=init)
@@ -233,6 +243,7 @@ def main():
  q=sub.add_parser('font');q.add_argument('--workspace',required=True);q.add_argument('--name',choices=FONT_SOURCES,required=True);q.set_defaults(func=fetch_font)
  q=sub.add_parser('material-pack');q.add_argument('--workspace',required=True);q.add_argument('--archive',required=True);q.add_argument('--name',required=True);q.add_argument('--sha256');q.set_defaults(func=install_pack)
  q=sub.add_parser('build');q.add_argument('--workspace',required=True);q.set_defaults(func=build)
+ q=sub.add_parser('check');q.add_argument('--workspace',required=True);q.set_defaults(func=check)
  q=sub.add_parser('render');q.add_argument('--workspace',required=True);q.add_argument('--browser');q.add_argument('--page',type=int,action='append');q.add_argument('--jpg',action='store_true',help='Also export high-quality sharing JPGs');q.add_argument('--pdf',action='store_true',help='Also export the rendered pages as a reading PDF');q.set_defaults(func=render)
  args=p.parse_args()
  try:args.func(args)

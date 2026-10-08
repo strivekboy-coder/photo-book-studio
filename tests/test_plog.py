@@ -33,6 +33,8 @@ class PlogTests(unittest.TestCase):
   audit=self.build(self.book())
   self.assertEqual((audit['selected'],audit['placed'],audit['omitted']),(2,2,0))
   self.assertTrue((self.root/'assets/plog-starter/blank-ticket.svg').exists())
+  self.assertTrue((self.root/'project/plog-planning.md').exists())
+  self.assertEqual(len(self.api.read(self.root/'project/plog-review.json')['creativeReview']),7)
   self.assertTrue((self.root/'sample.html').exists())
   self.assertIn('Seven optional', (self.root/'project/zine-review-policy.md').read_text(encoding='utf-8'))
   self.assertTrue((self.installed/'references/creative-prompts.md').exists())

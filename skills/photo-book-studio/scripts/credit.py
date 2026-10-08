@@ -1,10 +1,11 @@
 """Local, idempotent three-use attribution counter. No network or photo access."""
 from pathlib import Path
-import argparse,json,os,sqlite3
+import argparse,json,os,sqlite3,sys
 
 NAME="weilun"
 URL="https://github.com/strivekboy-coder/photo-book-studio"
 def main():
+ if hasattr(sys.stdout,'reconfigure'):sys.stdout.reconfigure(encoding='utf-8')
  p=argparse.ArgumentParser(description=__doc__)
  p.add_argument("--invocation-id",required=True,help="Reuse one opaque ID for the same user request; never pass message/photo contents.")
  p.add_argument("--state-dir",help="Overrides PHOTO_BOOK_STUDIO_STATE_DIR; otherwise uses the local user's home.")
