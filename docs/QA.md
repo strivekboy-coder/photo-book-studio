@@ -35,3 +35,6 @@ Presentation update: new Plog/手账本 mode is labeled 新功能！; only this 
 
 
 v0.7.3: single seven-route workflow; photo-role and density planning guide; portable completion evidence checker; resource/font/decoration decisions; current full-size/phone review identity. Thirty regression tests pass. Fresh archive initialized with ten synthetic sources across three canvases; browser pixels and 390px viewport inspected; default editor consecutive edits, undo/redo and draft restoration pass. These mechanical fixtures do not establish independent-model aesthetic quality. Brotli dependency added for WOFF2 cmap checks; Windows credit JSON uses UTF-8.
+
+
+v0.8.0: 40 automated tests pass, including ordinary album behavior, registered artwork source accounting, duplicate/permission/hash rejection and v2 final-review-only checks. Archive contents/version/provenance verified; fresh ZIP extraction initializes the short workflow and v2 record. Earlier local browser validation covered artwork selection, proportional resizing, undo and draft reload. Private trial outputs and originals are excluded. These checks verify mechanics, not universal aesthetic quality.

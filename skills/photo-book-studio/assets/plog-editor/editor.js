@@ -21,7 +21,7 @@
     if (candidate.pages.length !== initial.book.pages.length || JSON.stringify(candidate.fonts)!==JSON.stringify(initial.book.fonts)) return false;
     return candidate.pages.every((p,pi)=>p.layers.length===initial.book.pages[pi].layers.length && p.layers.every((o,li)=>{
       const original=initial.book.pages[pi].layers[li];
-      return o.type===original.type && o.file===original.file && o.path===original.path && ['x','y','w','h'].every(k=>Number.isFinite(o[k])) && o.w>0 && o.h>0 && Number.isFinite(o.rotate||0) && Number.isFinite(o.z||0) && (o.type!=='text'||(typeof o.text==='string' && Object.hasOwn(initial.book.fonts,o.font||'default') && Number.isFinite(o.size)&&o.size>=8&&o.size<=300));
+      return o.type===original.type && o.file===original.file && o.path===original.path && JSON.stringify(o.sourceFiles||[])===JSON.stringify(original.sourceFiles||[]) && ['x','y','w','h'].every(k=>Number.isFinite(o[k])) && o.w>0 && o.h>0 && Number.isFinite(o.rotate||0) && Number.isFinite(o.z||0) && (o.type!=='text'||(typeof o.text==='string' && Object.hasOwn(initial.book.fonts,o.font||'default') && Number.isFinite(o.size)&&o.size>=8&&o.size<=300));
     }));
   }
   function remember(previous) {
@@ -40,7 +40,7 @@
     book.pages.forEach((p,pi)=>p.layers.forEach((o,li)=>{
       const el=document.querySelector(`[data-page="${pi+1}"] [data-layer="${li+1}"]`);
       Object.assign(el.style,{left:o.x+'px',top:o.y+'px',width:o.w+'px',height:o.h+'px',transform:`rotate(${o.rotate||0}deg)`,zIndex:o.z??li+1});
-      el.dataset.editable=['photo','image','text','path'].includes(o.type);
+      el.dataset.editable=['photo','image','artwork','text','path'].includes(o.type);
       if(o.type==='text'){el.textContent=o.text;Object.assign(el.style,{fontSize:o.size+'px',color:o.color||'#fff',fontFamily:o.font||'default'});}
       crop(o,el);
       if(o.type==='path'){
@@ -63,7 +63,7 @@
   const selector=panel.querySelector('#edit-layer');
   book.pages.forEach((p,pi)=>p.layers.forEach((o,li)=>{
     const opt=document.createElement('option');opt.value=pi+':'+li;
-    const name={photo:'照片',text:'文字',image:'贴纸',paper:'纸张',path:'涂鸦'}[o.type];
+    const name={photo:'照片',artwork:'生成组合',text:'文字',image:'贴纸',paper:'纸张',path:'涂鸦'}[o.type];
     opt.textContent=`第${pi+1}页 · ${name} · ${(o.label||o.text||o.file||o.path?.split('/').pop()||li+1).toString().slice(0,24)}`;selector.append(opt);
   }));
   Object.keys(book.fonts).forEach(name=>{const opt=document.createElement('option');opt.value=name;opt.textContent={hand:'手写注释',display:'标题字体',default:'正文字体'}[name]||name;panel.querySelector('[data-prop=font]').append(opt);});
@@ -127,7 +127,7 @@
     else{
       const r=(a.rotate||0)*Math.PI/180,localX=dx*Math.cos(r)+dy*Math.sin(r),localY=-dx*Math.sin(r)+dy*Math.cos(r);
       let w=Math.max(24,a.w+localX),h=Math.max(24,a.h+localY);
-      if(['photo','image'].includes(a.type)){const b=a.border||0;const s=Math.max((2*b+24)/a.w,(2*b+(a.matBottom||0)+24)/a.h,1+(localX*a.w+localY*a.h)/(a.w*a.w+a.h*a.h));w=a.w*s;h=a.h*s;}
+      if(['photo','image','artwork'].includes(a.type)){const b=a.border||0;const s=Math.max((2*b+24)/a.w,(2*b+(a.matBottom||0)+24)/a.h,1+(localX*a.w+localY*a.h)/(a.w*a.w+a.h*a.h));w=a.w*s;h=a.h*s;}
       o.w=Math.round(w);o.h=Math.round(h);
       const dw=o.w-a.w,dh=o.h-a.h;o.x=a.x+(dw*Math.cos(r)-dh*Math.sin(r)-dw)/2;o.y=a.y+(dw*Math.sin(r)+dh*Math.cos(r)-dh)/2;
     }
@@ -143,8 +143,8 @@
       const o=layer(),k=input.dataset.prop;
       if(input.type==='number'){
         const n=Number(input.value);if(!input.value||!Number.isFinite(n)||(['w','h'].includes(k)&&n<24)||(k==='size'&&(n<8||n>300)))return;
-        if(['w','h'].includes(k)&&['photo','image'].includes(o.type)){const b=o.border||0,s=n/o[k];if(o.w*s<2*b+24||o.h*s<2*b+(o.matBottom||0)+24)return;}
-        if(['w','h'].includes(k)&&['photo','image'].includes(o.type)){const other=k==='w'?'h':'w';o[other]*=n/o[k];}o[k]=n;
+        if(['w','h'].includes(k)&&['photo','image','artwork'].includes(o.type)){const b=o.border||0,s=n/o[k];if(o.w*s<2*b+24||o.h*s<2*b+(o.matBottom||0)+24)return;}
+        if(['w','h'].includes(k)&&['photo','image','artwork'].includes(o.type)){const other=k==='w'?'h':'w';o[other]*=n/o[k];}o[k]=n;
       }else o[k]=input.value;
       draw();
     };

@@ -223,4 +223,4 @@ python /your/book/scripts/export_pdf.py --workspace /your/book
 前三次实际调用Skill时，会在对话中简短显示作者名字与项目链接。本机用户计数跨项目和升级保留；不写入相册、不添加水印、不自动打开网页或点赞。用户可明确要求停止。计数仅保存在本机，不上传使用数据；可用 PHOTO_BOOK_STUDIO_STATE_DIR 指定位置。
 
 
-Plog 页数先按照片主次、故事关系、文案量和手机辨识度决定，详见 [规划标准](skills/photo-book-studio/references/plog-planning.md)。v0.7.3 新增交付检查 `plog.py check`，完整安装包为 [photo-book-studio-v0.7.3.zip](https://github.com/strivekboy-coder/photo-book-studio/releases/download/v0.7.3/photo-book-studio-v0.7.3.zip)，包含默认微调编辑器。
+当前版本 **v0.8.0**：[下载完整 Skill](https://github.com/strivekboy-coder/photo-book-studio/releases/download/v0.8.0/photo-book-studio-v0.8.0.zip)。Plog 先读图、规划照片与注记的关系，轻量排版后由 imagegen 实现手写、跨框和材料衔接；信封、叠纸按需要作为整页或局部组件。网站、素材与字体按需要调用，最终做一次正常尺寸与手机预览检查，不做逐像素变化对照。详见 [Plog 制作步骤](skills/photo-book-studio/references/plog-workflow.md)。普通相册保留原流程。

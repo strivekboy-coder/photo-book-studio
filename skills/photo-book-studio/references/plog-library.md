@@ -2,6 +2,16 @@
 
 This is a starter research index, not a fixed style menu or a packaged asset kit. The current collection contains six inspiration sites, eight material-source records (including pending/excluded entries), five lettering candidates and the four initial concrete cases below. Additional travel/entertainment studies and acquired families are recorded at the end. Individual records state what was actually reviewed. Use current creator/license evidence before downloading or relying on an item.
 
+## Bundled visual anchors
+
+For a new design, open relevant local images listed in [plog-art-direction.md](plog-art-direction.md). The skill carries the previously approved masked night composition and public paper-cluster/frame-breakout examples, plus an original plain ruled-paper utility. Their provenance is in `assets/plog-visual-references/sources.json`. These are study examples, not new-user photo content or a fixed template. Actual reference viewing complements the source index below; cached observations alone are not equivalent to looking at the example.
+
+Research additions: [Scrapbook Photo Collage](https://github.com/ShaineDemo/scrapbook-photo-collage-skill) illustrates bundled visual anchors and material integration, but its fixed output counts/percentages and English default are not adopted. [Skye's source-responsive handwriting prompt](https://itsskye.me/prompt-with-messy-red-handwritten/) describes notes and marks reacting to visible details. [Watercolor Diary](https://github.com/jiayuewangjavy/watercolor-diary) discusses rhythm through scale/form/overlap rather than compulsory connectors. Instructions were researched; no third-party example images or prompts are copied into this skill, and independent aesthetic superiority is not claimed.
+
+## Integrated-generation trials
+
+User-corrected execution: photo-derived prompts receive actual original image references. The empty-envelope/empty-paper plus manually placed photo trials materially changed the intended method and are not approved examples. Direct envelope and three-photo paper generation produced stronger integration in inspected local studies, but user approval and fidelity review remain pending; no private trial images are bundled. The paper trial needed a focused correction for excessive collage occupancy. Generated finishing doodles also altered layout slightly and must not be called pixel-exact preservation.
+
 ## Concrete cases
 
 | Case | Evidence and useful relationships | Current assessment |

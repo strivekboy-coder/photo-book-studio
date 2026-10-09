@@ -1,0 +1,29 @@
+{
+  "purpose": "Visual references only; never count as selected user photos or reuse their people, captions or scenery as project content.",
+  "items": [
+    {
+      "path": "approved-night.jpg",
+      "source": "docs/showcase/plog/plog-masked.jpg",
+      "status": "Previously approved public composition; faces masked.",
+      "study": "Mixed border construction, emotional bright heart, source-specific short notes, night field and cream doodles."
+    },
+    {
+      "path": "paper-cluster.jpg",
+      "source": "docs/showcase/effects/paper-collage.jpg",
+      "status": "Previously approved public generated creative example.",
+      "study": "One compact overlapped photographic/paper unit; not a density default."
+    },
+    {
+      "path": "frame-breakout.jpg",
+      "source": "docs/showcase/effects/frame-breakout.jpg",
+      "status": "Previously approved public creative example.",
+      "study": "Recognizable source subject crossing a straight photo window; not a template for portraits."
+    },
+    {
+      "path": "plain-ruled-paper.svg",
+      "source": "Original native SVG created for this skill",
+      "status": "Reusable plain stationery utility, not a reviewed finished Plog.",
+      "study": "Clean everyday notebook sheet with faint blue rulings and red margin; no stains, aging or pocket required."
+    }
+  ]
+}

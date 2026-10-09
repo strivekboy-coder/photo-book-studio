@@ -16,11 +16,11 @@ Save the resolved answers to `project/brief.json` before layout begins. Read the
 4. Group by event and importance. Do not force one day into one spread.
 5. Review every image at contact-sheet scale; inspect crop-sensitive and hero images at full resolution.
 6. Allocate enough spreads before choosing templates. Prefer another spread over tiny meaningful photographs.
-7. Establish focus, scale relationships, alignment, whitespace, typography and palette from the real aspect ratios, faces, gestures, scenery, and visual weight; then choose or adapt layouts. For a zine brief, read zine-design.md once when choosing the direction.
+7. Before locking groups, page allocation or frames, read zine-policy.md and shortlist suitable candidates across all seven routes. Compare a promising creative concept with ordinary composition; estimates in step 6 remain provisional. Establish focus, scale relationships, alignment, whitespace, typography and palette from the real aspect ratios, faces, gestures, scenery, and visual weight; then choose or adapt layouts. For a zine brief, read zine-design.md once when choosing the direction.
 8. Write or polish concise event-level copy. Preserve facts, names, jokes, and emotional meaning.
 9. Place text in rendered whitespace with readable contrast and natural line breaks.
 10. Add source-related backgrounds, overlaps, and stickers only when they improve hierarchy or story.
-11. Finish the normal layout, then review rare candidates under the seven-route creative policy.
+11. Develop candidates shortlisted under the seven-route creative policy during visual-direction planning, before normal layout is locked. For every photo-derived creative skill/prompt, supply the actual original photographs together with the filled prompt to the skill and image tool; filenames or prose descriptions are not image inputs. Retain source IDs and original files, including when a later edit uses an intermediate artwork plus original fidelity references. Browser review checks their contribution and fidelity; it is not the first creative assessment. This input rule also applies to ordinary albums, not only Plog.
 12. Store auditable source IDs, generated paths, positions, captions, and provenance in `project/book.json`.
 13. Build, render every changed spread in a browser, correct visible failures, and render again.
 14. Confirm selected equals placed and omitted equals zero before reporting completion.

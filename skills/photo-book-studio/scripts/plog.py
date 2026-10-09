@@ -37,14 +37,15 @@ def init(args):
  for p in (HERE/'runtime/assets/fonts').iterdir():
   if p.name in {'LXGWWenKaiLite-Regular.ttf','OFL-LXGW-WenKai-Lite.txt'}:shutil.copy2(p,root/'assets/fonts'/p.name)
  shutil.copytree(HERE/'assets/plog-starter',root/'assets/plog-starter',dirs_exist_ok=True)
- save(root/'project/brief.json',{'kind':'plog','intakeComplete':False,'story':{},'output':{'value':'standalone PNGs and browser preview','source':'inferred'},'visual':{},'copy':{},'permissions':{}})
+ save(root/'project/brief.json',{'kind':'plog','intakeComplete':False,'story':{},'output':{'value':'standalone PNGs and browser preview','source':'inferred'},'visual':{},'copy':{},'permissions':{'integratedArtwork':{'value':True,'source':'inferred','reason':'Default delegated Plog production; explicit exact-pixel constraints override this in the resolved brief.'}}})
  save(root/'project/inventory.json',{'photos':[],'selected':0})
  shutil.copy2(HERE/'references/zine-policy.md',root/'project/zine-review-policy.md')
  shutil.copy2(HERE/'references/creative-prompts.md',root/'project/creative-prompts.md')
  shutil.copy2(HERE/'references/plog-planning.md',root/'project/plog-planning.md')
+ shutil.copy2(HERE/'references/plog-workflow.md',root/'project/plog-workflow.md')
  save(root/'project/plog-review.json',plog_review.template())
  save(root/'project/book.json',{'kind':'plog','title':args.title,'photoRoot':'assets/photos/','format':{'widthPx':1200,'heightPx':1600},'fonts':{'default':'assets/fonts/LXGWWenKaiLite-Regular.ttf'},'policy':{'allSelectedPhotosRequired':True,'authorizedOccurrences':{}},'pages':[]})
- (root/'AGENTS.md').write_text("# Standalone Plog workspace\n\nRead project/brief.json before acting. Use supplied preferences and safe defaults for a first Plog design; invite optional style/reference/copy/stickers, but ask only a missing item that materially blocks the design. Do not require an album questionnaire or answers to every field. Save explicit/inferred/unknown values and set intakeComplete before inventory. This is not a printed book questionnaire. Keep originals read-only and every selected source once unless repeats are authorized. Record all layers in project/book.json. Read project/plog-planning.md before allocating canvases. Consult reference/material/font resources and save real decisions in project/plog-review.json; assess all seven creative routes in project/zine-review-policy.md. Native SVG decoration is valid. Use the bundled layer renderer and default editor. After final-size and phone pixel inspection, run plog.py check before claiming completion. Dense layouts are allowed; faces, hands, essential subjects and copy must remain readable. Mark decoration separately. Build sample.html, render every changed canvas in a real browser and inspect pixels; automated counts do not certify aesthetics. Do not publish private photographs without explicit authorization.\n",encoding='utf-8')
+ (root/'AGENTS.md').write_text("# Standalone Plog workspace\n\nRead project/brief.json before acting. Use supplied preferences and safe defaults for a first Plog design; invite optional style/reference/copy/stickers, but ask only a missing item that materially blocks the design. Do not require an album questionnaire or answers to every field. Save explicit/inferred/unknown values and set intakeComplete before inventory. This is not a printed book questionnaire. Keep originals read-only and every selected source once unless repeats are authorized. Record all layers in project/book.json. Read project/plog-planning.md before allocating canvases. Read project/plog-workflow.md for five image-led stages. Research/material downloads/font comparisons are conditional, not mandatory. Choose suitable creative candidates before layout; record the shortlist, not seven compulsory essays. Pass actual original references with photo-derived prompts. Integrated components and final images use registered artwork source maps; originals remain archived. Native SVG is valid. Use the bundled editor when HTML is delivered, and omit editor delivery for explicit image-only output. After final-size and phone pixel inspection, run plog.py check before claiming completion. Dense layouts are allowed; faces, hands, essential subjects and copy must remain readable. Mark decoration separately. Build sample.html, render every changed canvas in a real browser and inspect pixels; automated counts do not certify aesthetics. Do not publish private photographs without explicit authorization.\n",encoding='utf-8')
  print(f"Initialized {root}. Resolve and save the Plog brief before importing photos.")
 def inventory(args):
  root=Path(args.workspace).resolve()
@@ -95,7 +96,7 @@ def build(args):
  font_maps={}
  for name,path in fonts.items():
   with TTFont(str(local(root,path))) as f:font_maps[name]=f.getBestCmap()
- counts=Counter();sections=[];geometry=[];paths=set(fonts.values())
+ counts=Counter();sections=[];geometry=[];paths=set(fonts.values());artwork_mappings=[]
  for pi,page in enumerate(book.get('pages',[]),1):
   layers=[]
   for li,obj in enumerate(page.get('layers',[]),1):
@@ -106,7 +107,7 @@ def build(args):
    style=f"left:{x}px;top:{y}px;width:{w}px;height:{h}px;transform:rotate({rot}deg);z-index:{z};opacity:{opacity};"
    # Geometry is advisory: off-canvas bleed may be deliberate, subjects still need visual review.
    if x<0 or y<0 or x+w>width or y+h>height:geometry.append({'page':pi,'layer':li,'note':'Base box crosses canvas; inspect intentional bleed/crop'})
-   if typ in {'photo','image'}:
+   if typ in {'photo','image','artwork'}:
     if typ=='photo':
      file=obj.get('file')
      if file not in records:raise ValueError(f"Unknown selected source: {file}")
@@ -117,6 +118,23 @@ def build(args):
       if not obj.get('approvedDerivative') or approval.get('path')!=path or approval.get('source')!='explicit':raise ValueError(f"Derivative not explicitly approved in brief: {file}")
      source=local(root,original)
      if records[file].get('sha256') and sha(source)!=records[file]['sha256']:raise ValueError(f"Source changed: {file}")
+    elif typ=='artwork':
+     if obj.get('file') or obj.get('decorative') is True:raise ValueError("Artwork source mappings cannot be disguised as decoration or a single photo.")
+     path=obj['path'];files=obj.get('sourceFiles')
+     if not isinstance(files,list) or not files or any(not isinstance(f,str) or f not in records for f in files):raise ValueError("Artwork needs known sourceFiles.")
+     registry=book.get('artworks',{}).get(path,{})
+     if Counter(registry.get('sourceFiles',[]))!=Counter(files):raise ValueError("Artwork sourceFiles differ from registered provenance.")
+     if registry.get('method') not in {'imagegen-integrated','imagegen-finishing','native-composite'}:raise ValueError("Artwork needs its actual production method.")
+     provenance=registry.get('generationRecord')
+     if not isinstance(provenance,str) or not provenance:raise ValueError("Artwork needs a project-local generationRecord.")
+     read(local(root,provenance));paths.add(provenance)
+     if registry['method']!='native-composite':
+      permission=read(root/'project/brief.json').get('permissions',{}).get('integratedArtwork',{})
+      if permission.get('value') is not True or permission.get('source') not in {'explicit','accepted-recommendation','inferred'}:raise ValueError("Integrated artwork is not allowed by the resolved brief.")
+     for file in files:
+      counts[file]+=1;original=book.get('photoRoot','assets/photos/')+file;source=local(root,original)
+      if records[file].get('sha256') and sha(source)!=records[file]['sha256']:raise ValueError(f"Source changed: {file}")
+     artwork_mappings.append({'page':pi,'layer':li,'path':path,'sourceFiles':files,'method':registry['method'],'visualFidelityNotCertified':True})
     else:
      if obj.get('decorative') is not True:raise ValueError("Image-only layers must explicitly be decorative.")
      if obj.get('file'):raise ValueError("Decorative image cannot hide a selected source ID.")
@@ -186,7 +204,7 @@ def build(args):
  editor_data=json.dumps({'book':book,'inventory':inv['photos'],'revision':sha(root/'project/book.json')},ensure_ascii=False).replace('<','\\u003c')
  html_text=f'<!doctype html><html lang="zh"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title}</title><style>{style}{editor_css}</style><body><main class="viewer"><div class="intro">{title} · {len(sections)}页</div>{"".join(sections)}</main><script>{script}</script><script type="application/json" id="plog-data">{editor_data}</script><script>{editor_js}</script></body></html>'
  (root/'sample.html').write_text(html_text,encoding='utf-8')
- audit={'selected':len(records),'placed':sum(counts.values()),'omitted':0,'pages':len(sections),'sourceOccurrences':dict(counts),'expectedOccurrences':expected,'assets':sorted(paths),'geometryAdvisories':geometry,'browserInspectionRequired':True,'bookSha256':sha(root/'project/book.json')}
+ audit={'selected':len(records),'placed':sum(counts.values()),'omitted':0,'pages':len(sections),'sourceOccurrences':dict(counts),'expectedOccurrences':expected,'assets':sorted(paths),'geometryAdvisories':geometry,'browserInspectionRequired':True,'bookSha256':sha(root/'project/book.json'),'artworkMappings':artwork_mappings,'generatedIdentityNeedsPixelReview':bool(artwork_mappings)}
  save(root/'project/build-audit.json',audit);print(json.dumps({k:audit[k] for k in ['selected','placed','omitted','pages']}))
  return audit
 def render(args):

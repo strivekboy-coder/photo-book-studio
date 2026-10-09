@@ -2,16 +2,41 @@
 
 Read for a selected route 5, 6 or 7 after the seven-route suitability review. These are adaptable production briefs, not default treatments for every album or Plog. Use the current user's actual photos and confirmed facts. Preserve all selected memories and saved permissions. Persist the filled prompt and inspect the result; writing the constraints does not establish that they were achieved.
 
+## Pass source images with photo-derived prompts
+
+For any selected photo-derived creative skill/prompt and imagegen route in ordinary albums or Plog (all seven, including envelope and three-photo paper collage), attach the actual chosen original photographs using the tool's reference-image mechanism, together with the filled complete prompt. A written description, filename, cached observation or numbered photo role is not a substitute for passing those images. Inspect each input first. When a source-linked sticker is intended to reflect a specific animal, object or gesture, supply that original reference too. Purely symbolic motifs, ordinary paper utilities and native SVG marks do not require a photographic reference.
+
+Default to integrated reference-image generation: photographs, paper edges, masks, tape, occlusion and contact shading are designed together in one artwork. Do not silently replace a user-supplied complete photo-collage prompt with empty paper generation followed by hand-placed rectangular cards. That materially changes the method. Background-only generation is appropriate for a material-only request, an explicitly unchanged-original-pixels requirement, or an actual fidelity/tool failure, and should be identified as a fallback.
+
+For ordinary Plog, perform one final normal-size visual acceptance pass for coverage, recognizable people/gestures, obvious unintended mistakes, important text and expressive relationships. Do not compare pixels, magnify each source face after every generation, or treat ordinary smoothing/material recoloring/approved atmospheric foreground as a failure. Keep original files read-only and preserve actual reference inputs, prompt and outputs. Reopen a source only when an obvious final problem needs diagnosis or the user explicitly asks for exact original pixels. That exception can use native preservation; never promise pixel identity for generative editing. Ordinary album output retains its applicable source and print requirements.
+
+For a local Plog module, generate the complete photo-and-paper unit first with its original references. When transparency is needed, request an isolated integrated unit directly, or remove only the outside canvas with an image-edit tool after inspecting the unit. Place and scale that whole unit in the larger page; do not dismantle it into unrelated cards again. Whole-page routes retain their prompt-specific ratios/space; an isolated local adaptation is labeled separately. Ensure source IDs in a module are not also reused elsewhere unless repeats/alternatives are authorized. Generated artwork does not by itself prove source completeness; preserve the source map and inspect coverage. A full-photo edit used for finishing should receive the composed page as its editing reference and preserve existing photos/layout unless redesign is authorized.
+
+For image-only requested studies, these integrated artworks are valid output candidates; the editable layer renderer is not mandatory. For requested HTML editing, keep standard editor behavior and disclose if a generated module is adjustable as a group rather than independently editable photographs. Do not sacrifice the chosen creative method merely to fit the simplest rectangle in the renderer.
+
+## Choose sources and adapt the brief transparently
+
+The agent may select which current photos make a strong group, assign main/support roles, choose three or four sources when the user delegates that choice, and decide the module's page position and scale. Match the filled prompt's source count to the actual tool attachments and persist the source-role map. The complete original three-photo prompt remains a three-source route; a four-photo version is an explicitly labeled adaptation. Preserve the user's original prompt separately from filled/adapted prompts, including any focused correction. Do not claim an adapted prompt was used verbatim.
+
+Finished envelope and layered-paper artworks may be whole-page works or local components. For a local component, preserve its complete integrated photo/material group during transparent extraction and placement, and combine it with other selected photographs and writing without double-counting embedded sources. Native page assembly around the complete group is valid; splitting that group into generic cards again is not the same method. Record source mappings for embedded photos and inspect the finished page; count bookkeeping is not proof of fidelity.
+
+## Optional finishing edit on a complete page
+
+When useful or requested, pass the completed Plog page to imagegen and ask for additive hand-drawn arrows, source/edge-responsive dashed lines, underlines, small expressive motifs and paper contacts. Provide original source photos too when needed to anchor fidelity; explain that they are fidelity references, not extra images to add. Specify existing photos, exact copy, module geometry and protected subjects. Inspect the final page at normal full/phone sizes for recognizable source coverage, obvious content errors, readable important text, useful line directions and over-decoration; no per-pixel or per-intermediate comparison. Keep the original page and the finishing edit as named alternatives until accepted. Never promise pixel-exact preservation from a generated edit. A finishing pass is optional, not a mandatory decoration quota.
+
+Clearly symbolic foreground leaves or other atmospheric marks may add depth when the user permits this visual treatment and no factual scene claim is made. The owner explicitly approved the leaves in the envelope trial; this does not authorize invented travel events, dates, people or source replacement in other users' projects.
+
 ## 5. Travel-envelope adaptation
 
 Reference: [HwawH-J-Y/travel-envelope](https://github.com/HwawH-J-Y/travel-envelope). Reviewed 2026-10-08. The repository provides photo-role selection, source relationships, an imagegen prompt and visual acceptance checks, rather than a separate rendering program. No repository license file was established during this review; this skill links to it and uses the independently authored adaptation below rather than copying its full instructions or prompt. Consult the official skill if the user explicitly wants its exact workflow. Its omission/repetition and automatic local-object options never override this skill's source-preservation policy.
 
-Before generating: designate one scenic source, distinct foreground sources, a calm paper hue from the photos, the pocket's occlusion order and a known title or no text. Do not add destination souvenirs merely because inputs are sparse. Describe every permitted new decoration separately.
+Before generating: designate one scenic source, distinct foreground sources, a calm paper hue from the photos, the pocket's occlusion order and a known title or no text. Do not add destination souvenirs merely because inputs are sparse. Choose actual-contour foreground treatments for suitable source people, animals, food or objects, with difficult/group images framed. The envelope is thin; contents may have real source-derived volume. Do not force all foreground sources into rectangular cards or interpret the no-grounding-shadow rule as banning dimensional keepsakes. Describe permitted new decoration separately.
 
 ```text
 Make one 3:4 photographic travel keepsake collage using these designated sources:
 {background ID and its visible place/context}; {each foreground source ID, unique
-photo region or subject, frame/cutout treatment and intended position}.
+photo region or subject, suitable actual-contour cutout OR frame treatment,
+source-derived object volume and intended off-center position}.
 Keep the background recognizable and fill the canvas with that actual scene.
 Place a thin open paper envelope as a graphic overlay, roughly three-fifths of
 the width, with generous scenery around it. Choose a pale, subdued paper color
@@ -23,8 +48,11 @@ edges. Use real overlap rather than separated columns. Preserve identities,
 objects, perspective and visible source details. Keep difficult contours in
 framed photographs instead of rebuilding them. No white cutout halo.
 Use each designated source once. Do not clone a person or add unseen anatomy.
-Only the envelope, photo mounts, paper texture and subtle layer-contact shading
-may be newly created, plus {explicitly allowed decorative additions, or NONE}.
+Only the envelope, photo mounts, paper texture and layer-contact shading
+may be newly created, plus {allowed atmosphere/destination accents, or NONE}.
+Retain the real visible volume of source food/objects; do not make every source
+a rectangular card. Thin-envelope/no-background-grounding constraints do not
+mean all contents must be flat.
 Text: {exact confirmed wording, or NONE}, small and quiet on the paper front.
 No invented date, ticket, stamp value, itinerary, brand, slogan or watermark.
 Avoid oversized kraft boxes, muddy sepia, theatrical shadows and a rigid grid.
@@ -74,3 +102,13 @@ An early stock panda trial showed the mechanism but the user rejected its source
 ```
 
 Assign the three source roles from actual aspect ratios and safe crops. Do not apply these 45%/10–15-layer references to other Plog pages. Existing words within a photograph are source content, not permission to add a title. Keep paper colors connected to photos, with a true landscape/portrait contrast. The initial red-colonnade/street/panda trial was rejected because the subjects were visually competing and the result read as separate photo cards. Later coffee/park/architecture studies used one central main image and partially covered support strips; a uniform scale correction improved the reference-like quiet silhouette. The initial failures stay review criteria, not advertised sample quality. Exact occupancy and layer count were not measured or certified. Keep the rendered photos truthful; the exact same layout can instead be made from original photo layers and generated/native paper materials.
+
+## Current paper-cluster adaptation — preserve the original above
+
+For a standalone artwork, use the user-provided prompt above unchanged except the latest optional accent below. For a local insert, replace only its external warm-white-canvas/occupancy clause with: 外部背景透明，内部纸张保持米白色，保留完整不规则拼贴群和小幅透明安全边距；摄影与纸层一体生成。 Set `transparent_background: true` and attach the actual source photos. Do not change other constraints or generate blank paper first. Do not silently claim this transparent adaptation is the original full-canvas prompt.
+
+Owner's latest optional addition, preserved as supplied:
+
+> 可以加入一枚小型植物或花朵兼职作为点缀，但不要抢夺照片主体。
+
+The accent is optional, small and subordinate; it does not authorize unrelated visual filler. The original three-photo structure remains three; a delegated four-photo version is labeled as an adaptation and changes both written count and actual references.

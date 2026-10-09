@@ -34,7 +34,9 @@ class PlogTests(unittest.TestCase):
   self.assertEqual((audit['selected'],audit['placed'],audit['omitted']),(2,2,0))
   self.assertTrue((self.root/'assets/plog-starter/blank-ticket.svg').exists())
   self.assertTrue((self.root/'project/plog-planning.md').exists())
-  self.assertEqual(len(self.api.read(self.root/'project/plog-review.json')['creativeReview']),7)
+  self.assertEqual(self.api.read(self.root/'project/plog-review.json')['version'],2)
+  self.assertEqual(self.api.read(self.root/'project/plog-review.json')['creativeReview'],[])
+  self.assertTrue((self.root/'project/plog-workflow.md').exists())
   self.assertTrue((self.root/'sample.html').exists())
   self.assertIn('Seven optional', (self.root/'project/zine-review-policy.md').read_text(encoding='utf-8'))
   self.assertTrue((self.installed/'references/creative-prompts.md').exists())
@@ -88,5 +90,28 @@ class PlogTests(unittest.TestCase):
   with zipfile.ZipFile(z,'w') as f:f.writestr('../../outside.png','bad')
   with self.assertRaisesRegex(ValueError,'escapes'):self.api.install_pack(argparse.Namespace(workspace=str(self.root),archive=str(z),name='testpack',sha256=None))
   self.assertFalse((self.root/'assets/testpack').exists())
+ def artwork_book(self):
+  b=self.book();files=['照片.jpg','detail.png'];Image.new('RGB',(800,600),'#77aabb').save(self.root/'assets/group.png')
+  self.api.save(self.root/'project/generation.json',{'tool':'fixture','prompt':'fixture only','inputs':files,'outputs':['assets/group.png']})
+  b['pages'][0]['layers']=[{'type':'artwork','path':'assets/group.png','sourceFiles':files,'x':10,'y':10,'w':800,'h':600}]
+  b['artworks']={'assets/group.png':{'sourceFiles':files,'method':'imagegen-integrated','generationRecord':'project/generation.json'}}
+  return b
+ def test_integrated_artwork_counts_each_original_and_embeds_editor(self):
+  audit=self.build(self.artwork_book());self.assertEqual((audit['selected'],audit['placed'],audit['omitted']),(2,2,0));self.assertEqual(len(audit['artworkMappings']),1)
+  self.assertTrue(audit['generatedIdentityNeedsPixelReview']);page=(self.root/'sample.html').read_text(encoding='utf-8');self.assertIn("artwork:'生成组合'",page)
+ def test_artwork_and_raw_photo_duplicate_is_rejected(self):
+  b=self.artwork_book();b['pages'][0]['layers'].append({'type':'photo','file':'照片.jpg','x':900,'y':10,'w':100,'h':150})
+  with self.assertRaisesRegex(ValueError,'Selection invariant'):self.build(b)
+ def test_artwork_registry_mismatch_unknown_source_and_exact_pixel_permission_rejected(self):
+  b=self.artwork_book();b['pages'][0]['layers'][0]['sourceFiles']=['照片.jpg']
+  with self.assertRaisesRegex(ValueError,'registered provenance'):self.build(b)
+  b=self.artwork_book();b['pages'][0]['layers'][0]['sourceFiles']=['missing.jpg']
+  with self.assertRaisesRegex(ValueError,'known sourceFiles'):self.build(b)
+  b=self.artwork_book();brief=self.api.read(self.root/'project/brief.json');brief['permissions']['integratedArtwork']={'value':False,'source':'explicit'};self.api.save(self.root/'project/brief.json',brief)
+  with self.assertRaisesRegex(ValueError,'not allowed'):self.build(b)
+ def test_artwork_still_checks_archived_source_hashes(self):
+  b=self.artwork_book();Image.new('RGB',(300,500),'red').save(self.root/'assets/photos/照片.jpg')
+  with self.assertRaisesRegex(ValueError,'Source changed'):self.build(b)
+
 if __name__=='__main__':unittest.main()
 
